@@ -1,0 +1,6 @@
+v4l2_env = Environment()
+v4l2_flag = v4l2_env.ParseFlags("-Wall -g")
+v4l2_env.MergeFlags(v4l2_flag)
+
+v4l2_env.Program("v4l2_test", ['v4l2_test.c'])
+

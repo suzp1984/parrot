@@ -1,0 +1,9 @@
+import glob
+
+thread_cond_sources = ['thread_cond.c']
+thread_test_sources = ['thread_test.c']
+test_prog = Program(thread_cond_sources, LIBS=['pthread'], CCFLAGS='-Wall -g')
+print test_prog
+test_prog = Program(thread_test_sources, LIBS=['pthread'], CCFLAGS='-Wall -g')
+print test_prog
+Decider('timestamp-match')

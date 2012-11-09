@@ -1,0 +1,624 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACLOCAL	os/linux/Makefile	/^ACLOCAL = ${SHELL} \/home\/zxsu\/hack\/ftk-read-only\/missing --run aclocal-1.11$/;"	m
+ACLOCAL_M4	os/linux/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMTAR	os/linux/Makefile	/^AMTAR = ${SHELL} \/home\/zxsu\/hack\/ftk-read-only\/missing --run tar$/;"	m
+AR	os/linux/Makefile	/^AR = ar$/;"	m
+AUTOCONF	os/linux/Makefile	/^AUTOCONF = ${SHELL} \/home\/zxsu\/hack\/ftk-read-only\/missing --run autoconf$/;"	m
+AUTOHEADER	os/linux/Makefile	/^AUTOHEADER = ${SHELL} \/home\/zxsu\/hack\/ftk-read-only\/missing --run autoheader$/;"	m
+AUTOMAKE	os/linux/Makefile	/^AUTOMAKE = ${SHELL} \/home\/zxsu\/hack\/ftk-read-only\/missing --run automake-1.11$/;"	m
+AWK	os/linux/Makefile	/^AWK = gawk$/;"	m
+CATALOGS	os/linux/Makefile	/^CATALOGS =  zh_CN.gmo$/;"	m
+CATOBJEXT	os/linux/Makefile	/^CATOBJEXT = .gmo$/;"	m
+CC	os/linux/Makefile	/^CC = gcc$/;"	m
+CCDEPMODE	os/linux/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CFLAGS	os/linux/Makefile	/^CFLAGS = -g -O2 -DHAVE_CONFIG_FTK_H -DUSE_LINUX_FB -DUSE_LINUX_NATIVE  -DUSE_LINEBREAK  -DUSE_OPENGLES -DUSE_VNC$/;"	m
+CONFIG_CLEAN_FILES	os/linux/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	os/linux/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	os/linux/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config_ftk.h$/;"	m
+CPP	os/linux/Makefile	/^CPP = gcc -E$/;"	m
+CPPFLAGS	os/linux/Makefile	/^CPPFLAGS = $/;"	m
+CXX	os/linux/Makefile	/^CXX = g++$/;"	m
+CXXCPP	os/linux/Makefile	/^CXXCPP = g++ -E$/;"	m
+CXXDEPMODE	os/linux/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	os/linux/Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CYGPATH_W	os/linux/Makefile	/^CYGPATH_W = echo$/;"	m
+DATADIRNAME	os/linux/Makefile	/^DATADIRNAME = share$/;"	m
+DECL_PRIV	ftk_typedef.h	219;"	d
+DECL_PRIV0	ftk_typedef.h	220;"	d
+DECL_PRIV1	ftk_typedef.h	221;"	d
+DECL_PRIV2	ftk_typedef.h	222;"	d
+DEFS	os/linux/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	os/linux/Makefile	/^DEPDIR = .deps$/;"	m
+DIRECTFB_CFLAGS	os/linux/Makefile	/^DIRECTFB_CFLAGS = $/;"	m
+DIRECTFB_LIBS	os/linux/Makefile	/^DIRECTFB_LIBS = $/;"	m
+DISTFILES	os/linux/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	os/linux/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_SOURCES	os/linux/Makefile	/^DIST_SOURCES =$/;"	m
+DSYMUTIL	os/linux/Makefile	/^DSYMUTIL = $/;"	m
+DUMPBIN	os/linux/Makefile	/^DUMPBIN = $/;"	m
+ECHO_C	os/linux/Makefile	/^ECHO_C = $/;"	m
+ECHO_N	os/linux/Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	os/linux/Makefile	/^ECHO_T = $/;"	m
+EGREP	os/linux/Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+EXEEXT	os/linux/Makefile	/^EXEEXT = $/;"	m
+EXTRA_DIST	os/linux/Makefile	/^EXTRA_DIST = ftk_linux.c  ftk_linux.h  ftk_mmap_linux.c$/;"	m
+FGREP	os/linux/Makefile	/^FGREP = \/bin\/grep -F$/;"	m
+FTK_ABS	ftk_typedef.h	227;"	d
+FTK_ALIGN_CENTER	ftk_typedef.h	/^	FTK_ALIGN_CENTER$/;"	e	enum:_FtkAlignment
+FTK_ALIGN_LEFT	ftk_typedef.h	/^	FTK_ALIGN_LEFT = 0,$/;"	e	enum:_FtkAlignment
+FTK_ALIGN_RIGHT	ftk_typedef.h	/^	FTK_ALIGN_RIGHT,$/;"	e	enum:_FtkAlignment
+FTK_ALLOC	ftk_typedef.h	295;"	d
+FTK_ALLOC	ftk_typedef.h	301;"	d
+FTK_ALLOCATOR_DEFAULT_H	ftk_allocator_default.h	33;"	d
+FTK_ALLOCATOR_H	ftk_allocator.h	33;"	d
+FTK_ALLOCATOR_PROFILE_H	ftk_allocator_profile.h	33;"	d
+FTK_ALLOC_PROFILE	ftk.c	52;"	d	file:
+FTK_ALLOC_PROFILE	ftk.c	54;"	d	file:
+FTK_ALPHA	ftk_typedef.h	232;"	d
+FTK_ALPHA_1	ftk_typedef.h	231;"	d
+FTK_ARRAY_SIZE	ftk_typedef.h	236;"	d
+FTK_ATTR_AUTO_LAYOUT	ftk_typedef.h	/^	FTK_ATTR_AUTO_LAYOUT     = 1<<9,  \/*for dialog only*\/$/;"	e	enum:_FtkWidgetAttr
+FTK_ATTR_BG_CENTER	ftk_typedef.h	/^	FTK_ATTR_BG_CENTER       = 1<<2,$/;"	e	enum:_FtkWidgetAttr
+FTK_ATTR_BG_FOUR_CORNER	ftk_typedef.h	/^	FTK_ATTR_BG_FOUR_CORNER  = 1<<4,$/;"	e	enum:_FtkWidgetAttr
+FTK_ATTR_BG_TILE	ftk_typedef.h	/^	FTK_ATTR_BG_TILE         = 1<<3,$/;"	e	enum:_FtkWidgetAttr
+FTK_ATTR_FOCUSED	ftk_typedef.h	/^	FTK_ATTR_FOCUSED         = 1<<6,$/;"	e	enum:_FtkWidgetAttr
+FTK_ATTR_IGNORE_CLOSE	ftk_typedef.h	/^	FTK_ATTR_IGNORE_CLOSE    = 1<<7, \/*for window only*\/$/;"	e	enum:_FtkWidgetAttr
+FTK_ATTR_INSENSITIVE	ftk_typedef.h	/^	FTK_ATTR_INSENSITIVE     = 1<<5,$/;"	e	enum:_FtkWidgetAttr
+FTK_ATTR_NO_FOCUS	ftk_typedef.h	/^	FTK_ATTR_NO_FOCUS        = 1<<1,$/;"	e	enum:_FtkWidgetAttr
+FTK_ATTR_POPUP	ftk_typedef.h	/^	FTK_ATTR_POPUP           = 1<<10  \/*for dialog only*\/$/;"	e	enum:_FtkWidgetAttr
+FTK_ATTR_QUIT_WHEN_CLOSE	ftk_typedef.h	/^	FTK_ATTR_QUIT_WHEN_CLOSE = 1<<8, \/*for window only*\/$/;"	e	enum:_FtkWidgetAttr
+FTK_ATTR_TRANSPARENT	ftk_typedef.h	/^	FTK_ATTR_TRANSPARENT     = 1,$/;"	e	enum:_FtkWidgetAttr
+FTK_BEGIN_DECLS	ftk_typedef.h	267;"	d
+FTK_BEGIN_DECLS	ftk_typedef.h	270;"	d
+FTK_BUTTON	ftk_typedef.h	/^	FTK_BUTTON,$/;"	e	enum:_FtkWidgetType
+FTK_CALL_LISTENER	ftk_typedef.h	214;"	d
+FTK_CHECK_BUTTON	ftk_typedef.h	/^	FTK_CHECK_BUTTON,$/;"	e	enum:_FtkWidgetType
+FTK_CLIPBOARD_SIZE	ftk_typedef.h	257;"	d
+FTK_COMBO_BOX	ftk_typedef.h	/^	FTK_COMBO_BOX,$/;"	e	enum:_FtkWidgetType
+FTK_DEFAULT_SOURCE_NR	ftk_sources_manager.c	42;"	d	file:
+FTK_DIALOG	ftk_typedef.h	/^	FTK_DIALOG,$/;"	e	enum:_FtkWidgetType
+FTK_DIALOG_BORDER	ftk_typedef.h	247;"	d
+FTK_DIALOG_MARGIN	ftk_typedef.h	246;"	d
+FTK_DIALOG_TITLE_HEIGHT	ftk_typedef.h	248;"	d
+FTK_END_DECLS	ftk_typedef.h	268;"	d
+FTK_END_DECLS	ftk_typedef.h	271;"	d
+FTK_ENTRY	ftk_typedef.h	/^	FTK_ENTRY,$/;"	e	enum:_FtkWidgetType
+FTK_FALSE	ftk_typedef.h	/^	FTK_FALSE = 0$/;"	e	enum:_FtkBool
+FTK_FONT_SIZE	ftk_typedef.h	263;"	d
+FTK_FREE	ftk_typedef.h	298;"	d
+FTK_FREE	ftk_typedef.h	304;"	d
+FTK_GLOBALS_H	ftk_globals.h	33;"	d
+FTK_H	ftk.h	33;"	d
+FTK_HALF	ftk_typedef.h	224;"	d
+FTK_HAS_MAIN	os/linux/ftk_linux.h	68;"	d
+FTK_H_MARGIN	ftk_typedef.h	239;"	d
+FTK_ICON_VIEW	ftk_typedef.h	/^	FTK_ICON_VIEW,$/;"	e	enum:_FtkWidgetType
+FTK_IMAGE	ftk_typedef.h	/^	FTK_IMAGE,$/;"	e	enum:_FtkWidgetType
+FTK_IM_CANDIDATE_BUFF_LENGTH	ftk_typedef.h	203;"	d
+FTK_IM_PREEDITOR_MAX_ROW	ftk_typedef.h	259;"	d
+FTK_IM_RAW_TEXT_LENGTH	ftk_typedef.h	202;"	d
+FTK_INHERITE_FROM	ftk_typedef.h	212;"	d
+FTK_INIT	ftk_typedef.h	276;"	d
+FTK_INIT	ftk_typedef.h	282;"	d
+FTK_INIT	ftk_typedef.h	288;"	d
+FTK_LABEL	ftk_typedef.h	/^	FTK_LABEL,$/;"	e	enum:_FtkWidgetType
+FTK_LABEL_LEFT_MARGIN	ftk_typedef.h	255;"	d
+FTK_LABEL_TOP_MARGIN	ftk_typedef.h	256;"	d
+FTK_LINUX_H	os/linux/ftk_linux.h	34;"	d
+FTK_LIST_VIEW	ftk_typedef.h	/^	FTK_LIST_VIEW,$/;"	e	enum:_FtkWidgetType
+FTK_LOG_D	ftk_typedef.h	/^	FTK_LOG_D = 1,$/;"	e	enum:_FtkLogLevel
+FTK_LOG_E	ftk_typedef.h	/^	FTK_LOG_E = 2$/;"	e	enum:_FtkLogLevel
+FTK_LOG_V	ftk_typedef.h	/^	FTK_LOG_V = 0,$/;"	e	enum:_FtkLogLevel
+FTK_MAIN	ftk_typedef.h	275;"	d
+FTK_MAIN	ftk_typedef.h	281;"	d
+FTK_MAIN	ftk_typedef.h	287;"	d
+FTK_MAIN_LOOP_H	ftk_main_loop.h	32;"	d
+FTK_MARQUEE_ALWAYS	ftk_typedef.h	/^	FTK_MARQUEE_ALWAYS  = 2,    \/*always marquee the text*\/$/;"	e	enum:_FtkMarqueeAttr
+FTK_MARQUEE_AUTO	ftk_typedef.h	/^	FTK_MARQUEE_AUTO    = 1,    \/*determine by the text size automatically.*\/$/;"	e	enum:_FtkMarqueeAttr
+FTK_MARQUEE_DOWN2UP	ftk_typedef.h	/^	FTK_MARQUEE_DOWN2UP = 16,   \/*scroll down to up*\/$/;"	e	enum:_FtkMarqueeAttr
+FTK_MARQUEE_FOREVER	ftk_typedef.h	/^	FTK_MARQUEE_FOREVER = 8,    \/*run forever*\/$/;"	e	enum:_FtkMarqueeAttr
+FTK_MARQUEE_NONE	ftk_typedef.h	/^	FTK_MARQUEE_NONE = 0,$/;"	e	enum:_FtkMarqueeAttr
+FTK_MARQUEE_ONCE	ftk_typedef.h	/^	FTK_MARQUEE_ONCE    = 4,    \/*run once and then stop*\/$/;"	e	enum:_FtkMarqueeAttr
+FTK_MARQUEE_RIGHT2LEFT	ftk_typedef.h	/^	FTK_MARQUEE_RIGHT2LEFT = 32 \/*scroll right to left*\/$/;"	e	enum:_FtkMarqueeAttr
+FTK_MASK_BITS	ftk_typedef.h	229;"	d
+FTK_MAX	ftk_typedef.h	226;"	d
+FTK_MAX_IMAGE_DECODERS	ftk_typedef.h	244;"	d
+FTK_MAX_PATH	ftk_typedef.h	241;"	d
+FTK_MAX_WINDOWS	ftk_typedef.h	242;"	d
+FTK_MENU_ITEM	ftk_typedef.h	/^	FTK_MENU_ITEM,$/;"	e	enum:_FtkWidgetType
+FTK_MENU_ITEM_HEIGHT	ftk_typedef.h	251;"	d
+FTK_MENU_ITEM_WIDTH	ftk_typedef.h	252;"	d
+FTK_MENU_MAX_ITEM	ftk_typedef.h	250;"	d
+FTK_MENU_PANEL	ftk_typedef.h	/^	FTK_MENU_PANEL,$/;"	e	enum:_FtkWidgetType
+FTK_MIN	ftk_typedef.h	225;"	d
+FTK_PAINTER	ftk_typedef.h	/^	FTK_PAINTER,$/;"	e	enum:_FtkWidgetType
+FTK_PATH_DELIM	os/linux/ftk_linux.h	66;"	d
+FTK_PIXEL_BGR24	ftk_typedef.h	/^	FTK_PIXEL_BGR24  = 1,$/;"	e	enum:_FtkPixelFormat
+FTK_PIXEL_BGRA32	ftk_typedef.h	/^	FTK_PIXEL_BGRA32 = 2,$/;"	e	enum:_FtkPixelFormat
+FTK_PIXEL_NONE	ftk_typedef.h	/^	FTK_PIXEL_NONE   = 0,$/;"	e	enum:_FtkPixelFormat
+FTK_PIXEL_RGB565	ftk_typedef.h	/^	FTK_PIXEL_RGB565 = 3,$/;"	e	enum:_FtkPixelFormat
+FTK_PIXEL_RGBA32	ftk_typedef.h	/^	FTK_PIXEL_RGBA32 = 4,$/;"	e	enum:_FtkPixelFormat
+FTK_POPUP_MENU_ITEM_HEIGHT	ftk_typedef.h	253;"	d
+FTK_PROGRESS_BAR	ftk_typedef.h	/^	FTK_PROGRESS_BAR,$/;"	e	enum:_FtkWidgetType
+FTK_QUIT	ftk_typedef.h	278;"	d
+FTK_QUIT	ftk_typedef.h	284;"	d
+FTK_QUIT	ftk_typedef.h	290;"	d
+FTK_QUIT_WHEN_WIDGET_CLOSE	ftk_typedef.h	279;"	d
+FTK_QUIT_WHEN_WIDGET_CLOSE	ftk_typedef.h	285;"	d
+FTK_QUIT_WHEN_WIDGET_CLOSE	ftk_typedef.h	291;"	d
+FTK_RADIO_BUTTON	ftk_typedef.h	/^	FTK_RADIO_BUTTON,$/;"	e	enum:_FtkWidgetType
+FTK_RADIO_GROUP	ftk_typedef.h	/^	FTK_RADIO_GROUP,$/;"	e	enum:_FtkWidgetType
+FTK_REALLOC	ftk_typedef.h	296;"	d
+FTK_REALLOC	ftk_typedef.h	302;"	d
+FTK_ROTATE_0	ftk_typedef.h	/^	FTK_ROTATE_0 = 0,$/;"	e	enum:_FtkRotate
+FTK_ROTATE_180	ftk_typedef.h	/^	FTK_ROTATE_180,$/;"	e	enum:_FtkRotate
+FTK_ROTATE_270	ftk_typedef.h	/^	FTK_ROTATE_270,$/;"	e	enum:_FtkRotate
+FTK_ROTATE_90	ftk_typedef.h	/^	FTK_ROTATE_90,$/;"	e	enum:_FtkRotate
+FTK_ROTATE_NR	ftk_typedef.h	/^	FTK_ROTATE_NR$/;"	e	enum:_FtkRotate
+FTK_RUN	ftk_typedef.h	277;"	d
+FTK_RUN	ftk_typedef.h	283;"	d
+FTK_RUN	ftk_typedef.h	289;"	d
+FTK_SCROLL_BAR_WIDTH	ftk_typedef.h	249;"	d
+FTK_SCROLL_HBAR	ftk_typedef.h	/^	FTK_SCROLL_HBAR,$/;"	e	enum:_FtkWidgetType
+FTK_SCROLL_VBAR	ftk_typedef.h	/^	FTK_SCROLL_VBAR,$/;"	e	enum:_FtkWidgetType
+FTK_SOURCE_IDLE_H	ftk_source_idle.h	33;"	d
+FTK_SOURCE_MANAGER_H	ftk_sources_manager.h	33;"	d
+FTK_SOURCE_PRIMARY_H	ftk_source_primary.h	32;"	d
+FTK_SOURCE_TIMER_H	ftk_source_timer.h	32;"	d
+FTK_SPACE_WIDTH	ftk_typedef.h	243;"	d
+FTK_STATUS_ITEM	ftk_typedef.h	/^	FTK_STATUS_ITEM,$/;"	e	enum:_FtkWidgetType
+FTK_STATUS_PANEL	ftk_typedef.h	/^	FTK_STATUS_PANEL,$/;"	e	enum:_FtkWidgetType
+FTK_STATUS_PANEL_HEIGHT	ftk_typedef.h	245;"	d
+FTK_STOCK_IMG_SUFFIX	ftk_typedef.h	254;"	d
+FTK_STRDUP	ftk_typedef.h	306;"	d
+FTK_TAB	ftk_typedef.h	/^	FTK_TAB,$/;"	e	enum:_FtkWidgetType
+FTK_TAB_PAGE	ftk_typedef.h	/^	FTK_TAB_PAGE,$/;"	e	enum:_FtkWidgetType
+FTK_TAB_WIDTH	ftk_typedef.h	260;"	d
+FTK_TEXT_VIEW	ftk_typedef.h	/^	FTK_TEXT_VIEW,$/;"	e	enum:_FtkWidgetType
+FTK_TITLE_LENGTH	ftk_typedef.h	258;"	d
+FTK_TRUE	ftk_typedef.h	/^	FTK_TRUE = 1,$/;"	e	enum:_FtkBool
+FTK_TYPEDEF_H	ftk_typedef.h	33;"	d
+FTK_V_MARGIN	ftk_typedef.h	240;"	d
+FTK_WAIT_BOX	ftk_typedef.h	/^	FTK_WAIT_BOX,$/;"	e	enum:_FtkWidgetType
+FTK_WIDGET_ACTIVE	ftk_typedef.h	/^	FTK_WIDGET_ACTIVE      = 2,$/;"	e	enum:_FtkWidgetState
+FTK_WIDGET_FOCUSED	ftk_typedef.h	/^	FTK_WIDGET_FOCUSED     = 1,$/;"	e	enum:_FtkWidgetState
+FTK_WIDGET_INSENSITIVE	ftk_typedef.h	/^	FTK_WIDGET_INSENSITIVE = 3,$/;"	e	enum:_FtkWidgetState
+FTK_WIDGET_NONE	ftk_typedef.h	/^	FTK_WIDGET_NONE   = 0,$/;"	e	enum:_FtkWidgetType
+FTK_WIDGET_NORMAL	ftk_typedef.h	/^	FTK_WIDGET_NORMAL      = 0,$/;"	e	enum:_FtkWidgetState
+FTK_WIDGET_STATE_NR	ftk_typedef.h	/^	FTK_WIDGET_STATE_NR    = 4$/;"	e	enum:_FtkWidgetState
+FTK_WIDGET_TYPE_NR	ftk_typedef.h	/^	FTK_WIDGET_TYPE_NR$/;"	e	enum:_FtkWidgetType
+FTK_WINDOW	ftk_typedef.h	/^	FTK_WINDOW = 1,$/;"	e	enum:_FtkWidgetType
+FTK_WINDOW_ANY	ftk_typedef.h	/^	FTK_WINDOW_ANY,$/;"	e	enum:_FtkWidgetType
+FTK_WRAP_CHAR	ftk_typedef.h	/^	FTK_WRAP_CHAR,$/;"	e	enum:_FtkWrapMode
+FTK_WRAP_NONE	ftk_typedef.h	/^	FTK_WRAP_NONE,$/;"	e	enum:_FtkWrapMode
+FTK_WRAP_NR	ftk_typedef.h	/^	FTK_WRAP_NR$/;"	e	enum:_FtkWrapMode
+FTK_WRAP_WORD	ftk_typedef.h	/^	FTK_WRAP_WORD,$/;"	e	enum:_FtkWrapMode
+FTK_ZALLOC	ftk_typedef.h	297;"	d
+FTK_ZALLOC	ftk_typedef.h	303;"	d
+FTK_ZFREE	ftk_typedef.h	299;"	d
+FTK_ZFREE	ftk_typedef.h	305;"	d
+FtkAlignment	ftk_typedef.h	/^}FtkAlignment;$/;"	t	typeref:enum:_FtkAlignment
+FtkAllocator	ftk_allocator.h	/^typedef struct _FtkAllocator FtkAllocator;$/;"	t	typeref:struct:_FtkAllocator
+FtkAllocatorAlloc	ftk_allocator.h	/^typedef void* (*FtkAllocatorAlloc)(FtkAllocator* thiz, size_t size);$/;"	t
+FtkAllocatorDestroy	ftk_allocator.h	/^typedef void  (*FtkAllocatorDestroy)(FtkAllocator* thiz);$/;"	t
+FtkAllocatorFree	ftk_allocator.h	/^typedef void  (*FtkAllocatorFree)(FtkAllocator* thiz, void* ptr);$/;"	t
+FtkAllocatorRealloc	ftk_allocator.h	/^typedef void* (*FtkAllocatorRealloc)(FtkAllocator* thiz, void* ptr, size_t new_size);$/;"	t
+FtkBool	ftk_typedef.h	/^}FtkBool;$/;"	t	typeref:enum:_FtkBool
+FtkColor	ftk_typedef.h	/^}FtkColor;$/;"	t	typeref:struct:_FtkColor
+FtkCommitInfo	ftk_typedef.h	/^}FtkCommitInfo;$/;"	t	typeref:struct:_FtkCommitInfo
+FtkCompare	ftk_typedef.h	/^typedef int  (*FtkCompare)(const void* obj1, const void* obj2);$/;"	t
+FtkDestroy	ftk_typedef.h	/^typedef void (*FtkDestroy)(void* user_data);$/;"	t
+FtkIdle	ftk_typedef.h	/^typedef Ret  (*FtkIdle)(void* user_data);$/;"	t
+FtkKeyValue	ftk_typedef.h	/^}FtkKeyValue;$/;"	t	typeref:struct:_FtkKeyValue
+FtkListener	ftk_typedef.h	/^typedef Ret  (*FtkListener)(void* user_data, void* obj);$/;"	t
+FtkLogLevel	ftk_typedef.h	/^}FtkLogLevel;$/;"	t	typeref:enum:_FtkLogLevel
+FtkMainLoop	ftk_main_loop.h	/^typedef struct _FtkMainLoop FtkMainLoop;$/;"	t	typeref:struct:_FtkMainLoop
+FtkMarqueeAttr	ftk_typedef.h	/^}FtkMarqueeAttr;$/;"	t	typeref:enum:_FtkMarqueeAttr
+FtkPixelFormat	ftk_typedef.h	/^}FtkPixelFormat;$/;"	t	typeref:enum:_FtkPixelFormat
+FtkPoint	ftk_typedef.h	/^}FtkPoint;$/;"	t	typeref:struct:_FtkPoint
+FtkRect	ftk_typedef.h	/^}FtkRect;$/;"	t	typeref:struct:_FtkRect
+FtkRotate	ftk_typedef.h	/^}FtkRotate;$/;"	t	typeref:enum:_FtkRotate
+FtkSourcesManager	ftk_sources_manager.h	/^typedef struct _FtkSourcesManager FtkSourcesManager;$/;"	t	typeref:struct:_FtkSourcesManager
+FtkTimer	ftk_typedef.h	/^typedef Ret  (*FtkTimer)(void* user_data);$/;"	t
+FtkWidgetAttr	ftk_typedef.h	/^}FtkWidgetAttr;$/;"	t	typeref:enum:_FtkWidgetAttr
+FtkWidgetState	ftk_typedef.h	/^}FtkWidgetState;$/;"	t	typeref:enum:_FtkWidgetState
+FtkWidgetType	ftk_typedef.h	/^}FtkWidgetType;$/;"	t	typeref:enum:_FtkWidgetType
+FtkWrapMode	ftk_typedef.h	/^}FtkWrapMode;$/;"	t	typeref:enum:_FtkWrapMode
+GETTEXT_PACKAGE	os/linux/Makefile	/^GETTEXT_PACKAGE = ftk$/;"	m
+GMOFILES	os/linux/Makefile	/^GMOFILES =  zh_CN.gmo$/;"	m
+GMSGFMT	os/linux/Makefile	/^GMSGFMT = \/usr\/bin\/msgfmt$/;"	m
+GREP	os/linux/Makefile	/^GREP = \/bin\/grep$/;"	m
+GTKDOC_CHECK	os/linux/Makefile	/^GTKDOC_CHECK = \/usr\/bin\/gtkdoc-check$/;"	m
+GTKDOC_MKPDF	os/linux/Makefile	/^GTKDOC_MKPDF = \/usr\/bin\/gtkdoc-mkpdf$/;"	m
+GTKDOC_REBASE	os/linux/Makefile	/^GTKDOC_REBASE = \/usr\/bin\/gtkdoc-rebase$/;"	m
+HTML_DIR	os/linux/Makefile	/^HTML_DIR = ${datadir}\/gtk-doc\/html$/;"	m
+IDC_CLOSE_ITEM	ftk.c	325;"	d	file:
+IDC_ICON_ITEM	ftk.c	324;"	d	file:
+IDC_TITLE_ITEM	ftk.c	323;"	d	file:
+INSTALL	os/linux/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	os/linux/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	os/linux/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	os/linux/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	os/linux/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	os/linux/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INSTOBJEXT	os/linux/Makefile	/^INSTOBJEXT = .mo$/;"	m
+INTLLIBS	os/linux/Makefile	/^INTLLIBS = $/;"	m
+LD	os/linux/Makefile	/^LD = \/usr\/bin\/ld$/;"	m
+LDFLAGS	os/linux/Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	os/linux/Makefile	/^LIBOBJS = $/;"	m
+LIBS	os/linux/Makefile	/^LIBS = -lpng -ljpeg $/;"	m
+LIBTOOL	os/linux/Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LINUX	os/linux/ftk_linux.h	69;"	d
+LIPO	os/linux/Makefile	/^LIPO = $/;"	m
+LN_S	os/linux/Makefile	/^LN_S = ln -s$/;"	m
+LTLIBOBJS	os/linux/Makefile	/^LTLIBOBJS = $/;"	m
+MAKEINFO	os/linux/Makefile	/^MAKEINFO = ${SHELL} \/home\/zxsu\/hack\/ftk-read-only\/missing --run makeinfo$/;"	m
+MAX_EVENTS	ftk_source_primary.c	38;"	d	file:
+MKDIR_P	os/linux/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MKINSTALLDIRS	os/linux/Makefile	/^MKINSTALLDIRS = .\/mkinstalldirs$/;"	m
+MSGFMT	os/linux/Makefile	/^MSGFMT = \/usr\/bin\/msgfmt$/;"	m
+MSGFMT_OPTS	os/linux/Makefile	/^MSGFMT_OPTS = -c$/;"	m
+NM	os/linux/Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m
+NMEDIT	os/linux/Makefile	/^NMEDIT = $/;"	m
+NORMAL_INSTALL	os/linux/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	os/linux/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+N_	ftk_typedef.h	320;"	d
+N_	ftk_typedef.h	322;"	d
+N_	ftk_typedef.h	332;"	d
+OBJDUMP	os/linux/Makefile	/^OBJDUMP = objdump$/;"	m
+OBJEXT	os/linux/Makefile	/^OBJEXT = o$/;"	m
+OTOOL	os/linux/Makefile	/^OTOOL = $/;"	m
+OTOOL64	os/linux/Makefile	/^OTOOL64 = $/;"	m
+PACKAGE	os/linux/Makefile	/^PACKAGE = ftk$/;"	m
+PACKAGE_BUGREPORT	os/linux/Makefile	/^PACKAGE_BUGREPORT = xianjimli@hotmail.com$/;"	m
+PACKAGE_NAME	os/linux/Makefile	/^PACKAGE_NAME = ftk$/;"	m
+PACKAGE_STRING	os/linux/Makefile	/^PACKAGE_STRING = ftk 0.1$/;"	m
+PACKAGE_TARNAME	os/linux/Makefile	/^PACKAGE_TARNAME = ftk$/;"	m
+PACKAGE_URL	os/linux/Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_VERSION	os/linux/Makefile	/^PACKAGE_VERSION = 0.1$/;"	m
+PATH_SEPARATOR	os/linux/Makefile	/^PATH_SEPARATOR = :$/;"	m
+PKG_CONFIG	os/linux/Makefile	/^PKG_CONFIG = \/usr\/bin\/pkg-config$/;"	m
+PKG_CONFIG_LIBDIR	os/linux/Makefile	/^PKG_CONFIG_LIBDIR = $/;"	m
+PKG_CONFIG_PATH	os/linux/Makefile	/^PKG_CONFIG_PATH = $/;"	m
+POFILES	os/linux/Makefile	/^POFILES =  zh_CN.po$/;"	m
+POST_INSTALL	os/linux/Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	os/linux/Makefile	/^POST_UNINSTALL = :$/;"	m
+POSUB	os/linux/Makefile	/^POSUB = po$/;"	m
+PO_IN_DATADIR_FALSE	os/linux/Makefile	/^PO_IN_DATADIR_FALSE = $/;"	m
+PO_IN_DATADIR_TRUE	os/linux/Makefile	/^PO_IN_DATADIR_TRUE = $/;"	m
+PRE_INSTALL	os/linux/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	os/linux/Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROFILE_END	ftk_typedef.h	338;"	d
+PROFILE_END	ftk_typedef.h	343;"	d
+PROFILE_START	ftk_typedef.h	337;"	d
+PROFILE_START	ftk_typedef.h	342;"	d
+PROFILE_TIME	ftk_typedef.h	340;"	d
+PROFILE_TIME	ftk_typedef.h	344;"	d
+PrivInfo	ftk_allocator_profile.c	/^}PrivInfo;$/;"	t	typeref:struct:_PrivInfo	file:
+PrivInfo	ftk_source_idle.c	/^}PrivInfo;$/;"	t	typeref:struct:_PrivInfo	file:
+PrivInfo	ftk_source_primary.c	/^}PrivInfo;$/;"	t	typeref:struct:_PrivInfo	file:
+PrivInfo	ftk_source_timer.c	/^}PrivInfo;$/;"	t	typeref:struct:_PrivInfo	file:
+Q_	ftk_typedef.h	318;"	d
+Q_	ftk_typedef.h	331;"	d
+RANLIB	os/linux/Makefile	/^RANLIB = ranlib$/;"	m
+RET_AGAIN	ftk_typedef.h	/^	RET_AGAIN,$/;"	e	enum:_Ret
+RET_CONTINUE	ftk_typedef.h	/^	RET_CONTINUE,$/;"	e	enum:_Ret
+RET_EOF	ftk_typedef.h	/^	RET_EOF,$/;"	e	enum:_Ret
+RET_EXIST	ftk_typedef.h	/^	RET_EXIST,$/;"	e	enum:_Ret
+RET_FAIL	ftk_typedef.h	/^	RET_FAIL,$/;"	e	enum:_Ret
+RET_FOUND	ftk_typedef.h	/^	RET_FOUND,$/;"	e	enum:_Ret
+RET_IGNORED	ftk_typedef.h	/^	RET_IGNORED,$/;"	e	enum:_Ret
+RET_NEXT	ftk_typedef.h	/^	RET_NEXT,$/;"	e	enum:_Ret
+RET_NOT_FOUND	ftk_typedef.h	/^	RET_NOT_FOUND,$/;"	e	enum:_Ret
+RET_NO_TARGET	ftk_typedef.h	/^	RET_NO_TARGET,$/;"	e	enum:_Ret
+RET_OK	ftk_typedef.h	/^	RET_OK,$/;"	e	enum:_Ret
+RET_OUT_OF_SPACE	ftk_typedef.h	/^	RET_OUT_OF_SPACE$/;"	e	enum:_Ret
+RET_QUIT	ftk_typedef.h	/^	RET_QUIT,$/;"	e	enum:_Ret
+RET_REMOVE	ftk_typedef.h	/^	RET_REMOVE,$/;"	e	enum:_Ret
+Ret	ftk_typedef.h	/^}Ret;$/;"	t	typeref:enum:_Ret
+SED	os/linux/Makefile	/^SED = \/bin\/sed$/;"	m
+SET_MAKE	os/linux/Makefile	/^SET_MAKE = $/;"	m
+SHELL	os/linux/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SOURCES	os/linux/Makefile	/^SOURCES =$/;"	m
+STRIP	os/linux/Makefile	/^STRIP = strip$/;"	m
+USE_NLS	os/linux/Makefile	/^USE_NLS = yes$/;"	m
+VERSION	os/linux/Makefile	/^VERSION = 0.5$/;"	m
+XGETTEXT	os/linux/Makefile	/^XGETTEXT = \/usr\/bin\/xgettext$/;"	m
+ZERO_LEN_ARRAY	ftk_typedef.h	350;"	d
+ZERO_LEN_ARRAY	ftk_typedef.h	354;"	d
+_	ftk_typedef.h	316;"	d
+_	ftk_typedef.h	317;"	d
+_	ftk_typedef.h	330;"	d
+_FtkAlignment	ftk_typedef.h	/^typedef enum _FtkAlignment$/;"	g
+_FtkAllocator	ftk_allocator.h	/^struct _FtkAllocator$/;"	s
+_FtkBool	ftk_typedef.h	/^typedef enum _FtkBool$/;"	g
+_FtkColor	ftk_typedef.h	/^typedef struct _FtkColor$/;"	s
+_FtkCommitInfo	ftk_typedef.h	/^typedef struct _FtkCommitInfo$/;"	s
+_FtkGlobals	ftk_globals.c	/^struct _FtkGlobals$/;"	s	file:
+_FtkKeyValue	ftk_typedef.h	/^typedef struct _FtkKeyValue$/;"	s
+_FtkLogLevel	ftk_typedef.h	/^typedef enum _FtkLogLevel$/;"	g
+_FtkMainLoop	ftk_main_loop_select.c	/^struct _FtkMainLoop$/;"	s	file:
+_FtkMarqueeAttr	ftk_typedef.h	/^typedef enum _FtkMarqueeAttr$/;"	g
+_FtkMmap	os/linux/ftk_mmap_linux.c	/^struct _FtkMmap$/;"	s	file:
+_FtkPixelFormat	ftk_typedef.h	/^typedef enum _FtkPixelFormat$/;"	g
+_FtkPoint	ftk_typedef.h	/^typedef struct _FtkPoint$/;"	s
+_FtkRect	ftk_typedef.h	/^typedef struct _FtkRect$/;"	s
+_FtkRotate	ftk_typedef.h	/^typedef enum _FtkRotate$/;"	g
+_FtkSourcesManager	ftk_sources_manager.c	/^struct _FtkSourcesManager$/;"	s	file:
+_FtkWidgetAttr	ftk_typedef.h	/^typedef enum _FtkWidgetAttr$/;"	g
+_FtkWidgetState	ftk_typedef.h	/^typedef enum _FtkWidgetState$/;"	g
+_FtkWidgetType	ftk_typedef.h	/^typedef enum _FtkWidgetType$/;"	g
+_FtkWrapMode	ftk_typedef.h	/^typedef enum _FtkWrapMode$/;"	g
+_PrivInfo	ftk_allocator_profile.c	/^typedef struct _PrivInfo$/;"	s	file:
+_PrivInfo	ftk_source_idle.c	/^typedef struct _PrivInfo$/;"	s	file:
+_PrivInfo	ftk_source_primary.c	/^typedef struct _PrivInfo$/;"	s	file:
+_PrivInfo	ftk_source_timer.c	/^typedef struct _PrivInfo$/;"	s	file:
+_Ret	ftk_typedef.h	/^typedef enum _Ret$/;"	g
+a	ftk_typedef.h	/^	unsigned char a;$/;"	m	struct:_FtkColor
+abs_builddir	os/linux/Makefile	/^abs_builddir = \/home\/zxsu\/hack\/ftk-read-only\/src\/os\/linux$/;"	m
+abs_srcdir	os/linux/Makefile	/^abs_srcdir = \/home\/zxsu\/hack\/ftk-read-only\/src\/os\/linux$/;"	m
+abs_top_builddir	os/linux/Makefile	/^abs_top_builddir = \/home\/zxsu\/hack\/ftk-read-only$/;"	m
+abs_top_srcdir	os/linux/Makefile	/^abs_top_srcdir = \/home\/zxsu\/hack\/ftk-read-only$/;"	m
+ac_ct_CC	os/linux/Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CXX	os/linux/Makefile	/^ac_ct_CXX = g++$/;"	m
+ac_ct_DUMPBIN	os/linux/Makefile	/^ac_ct_DUMPBIN = $/;"	m
+action	ftk_source_idle.c	/^	FtkIdle action;$/;"	m	struct:_PrivInfo	file:
+action	ftk_source_timer.c	/^	FtkTimer action;$/;"	m	struct:_PrivInfo	file:
+alloc	ftk_allocator.h	/^	FtkAllocatorAlloc   alloc;$/;"	m	struct:_FtkAllocator
+allocated	ftk_allocator_profile.c	/^	int allocated;$/;"	m	struct:_PrivInfo	file:
+allocated_times	ftk_allocator_profile.c	/^	int allocated_times;$/;"	m	struct:_PrivInfo	file:
+allocator	ftk_allocator_profile.c	/^	FtkAllocator* allocator;$/;"	m	struct:_PrivInfo	file:
+allocator	ftk_globals.c	/^	FtkAllocator* allocator;$/;"	m	struct:_FtkGlobals	file:
+am__aclocal_m4_deps	os/linux/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.in$/;"	m
+am__cd	os/linux/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	os/linux/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__include	os/linux/Makefile	/^am__include = include$/;"	m
+am__leading_dot	os/linux/Makefile	/^am__leading_dot = .$/;"	m
+am__quote	os/linux/Makefile	/^am__quote = $/;"	m
+am__tar	os/linux/Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	os/linux/Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+b	ftk_typedef.h	/^	unsigned char b;$/;"	m	struct:_FtkColor
+bindir	os/linux/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindtextdomain	ftk_typedef.h	329;"	d
+bitmap_factory	ftk_globals.c	/^	FtkBitmapFactory* bitmap_factory;$/;"	m	struct:_FtkGlobals	file:
+build	os/linux/Makefile	/^build = i686-pc-linux-gnu$/;"	m
+build_alias	os/linux/Makefile	/^build_alias = $/;"	m
+build_cpu	os/linux/Makefile	/^build_cpu = i686$/;"	m
+build_os	os/linux/Makefile	/^build_os = linux-gnu$/;"	m
+build_triplet	os/linux/Makefile	/^build_triplet = i686-pc-linux-gnu$/;"	m
+build_vendor	os/linux/Makefile	/^build_vendor = pc$/;"	m
+builddir	os/linux/Makefile	/^builddir = .$/;"	m
+button_close_top_clicked	ftk.c	/^static Ret button_close_top_clicked(void* ctx, void* obj)$/;"	f	file:
+candidate_nr	ftk_typedef.h	/^	size_t candidate_nr;$/;"	m	struct:_FtkCommitInfo
+candidates	ftk_typedef.h	/^	char candidates[FTK_IM_CANDIDATE_BUFF_LENGTH + 1];$/;"	m	struct:_FtkCommitInfo
+canvas	ftk_globals.c	/^	FtkCanvas* canvas;$/;"	m	struct:_FtkGlobals	file:
+config	ftk_globals.c	/^	FtkConfig*   config;$/;"	m	struct:_FtkGlobals	file:
+data	os/linux/ftk_mmap_linux.c	/^	void* data;$/;"	m	struct:_FtkMmap	file:
+datadir	os/linux/Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	os/linux/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+dcgettext	ftk_typedef.h	328;"	d
+destroy	ftk_allocator.h	/^	FtkAllocatorDestroy destroy;$/;"	m	struct:_FtkAllocator
+dgettext	ftk_typedef.h	327;"	d
+display	ftk_globals.c	/^	FtkDisplay* display;$/;"	m	struct:_FtkGlobals	file:
+docdir	os/linux/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	os/linux/Makefile	/^dvidir = ${docdir}$/;"	m
+err_fdset	ftk_main_loop_select.c	/^	fd_set err_fdset;$/;"	m	struct:_FtkMainLoop	file:
+exec_prefix	os/linux/Makefile	/^exec_prefix = ${prefix}$/;"	m
+fbus_service_quit	demo/test.c	/^void fbus_service_quit(void)$/;"	f
+fbus_service_run	demo/test.c	/^Ret fbus_service_run(void)$/;"	f
+fd	os/linux/ftk_mmap_linux.c	/^	int fd;$/;"	m	struct:_FtkMmap	file:
+fdset	ftk_main_loop_select.c	/^	fd_set fdset;$/;"	m	struct:_FtkMainLoop	file:
+font	ftk_globals.c	/^	FtkFont* font;$/;"	m	struct:_FtkGlobals	file:
+free	ftk_allocator.h	/^	FtkAllocatorFree    free;$/;"	m	struct:_FtkAllocator
+free_times	ftk_allocator_profile.c	/^	int free_times;$/;"	m	struct:_PrivInfo	file:
+ftk_allocator_alloc	ftk_allocator.c	/^void* ftk_allocator_alloc(FtkAllocator* thiz, size_t size)$/;"	f
+ftk_allocator_default_alloc	ftk_allocator_default.c	/^void* ftk_allocator_default_alloc(FtkAllocator* thiz, size_t size)$/;"	f
+ftk_allocator_default_create	ftk_allocator_default.c	/^FtkAllocator* ftk_allocator_default_create(void)$/;"	f
+ftk_allocator_default_destroy	ftk_allocator_default.c	/^void  ftk_allocator_default_destroy(FtkAllocator* thiz)$/;"	f
+ftk_allocator_default_free	ftk_allocator_default.c	/^void  ftk_allocator_default_free(FtkAllocator* thiz, void* ptr)$/;"	f
+ftk_allocator_default_realloc	ftk_allocator_default.c	/^void* ftk_allocator_default_realloc(FtkAllocator* thiz, void* ptr, size_t new_size)$/;"	f
+ftk_allocator_destroy	ftk_allocator.c	/^void  ftk_allocator_destroy(FtkAllocator* thiz)$/;"	f
+ftk_allocator_free	ftk_allocator.c	/^void  ftk_allocator_free(FtkAllocator* thiz, void* ptr)$/;"	f
+ftk_allocator_profile_alloc	ftk_allocator_profile.c	/^void* ftk_allocator_profile_alloc(FtkAllocator* thiz, size_t size)$/;"	f
+ftk_allocator_profile_create	ftk_allocator_profile.c	/^FtkAllocator* ftk_allocator_profile_create(FtkAllocator* allocator)$/;"	f
+ftk_allocator_profile_destroy	ftk_allocator_profile.c	/^void  ftk_allocator_profile_destroy(FtkAllocator* thiz)$/;"	f
+ftk_allocator_profile_free	ftk_allocator_profile.c	/^void  ftk_allocator_profile_free(FtkAllocator* thiz, void* ptr)$/;"	f
+ftk_allocator_profile_realloc	ftk_allocator_profile.c	/^void* ftk_allocator_profile_realloc(FtkAllocator* thiz, void* ptr, size_t new_size)$/;"	f
+ftk_allocator_realloc	ftk_allocator.c	/^void* ftk_allocator_realloc(FtkAllocator* thiz, void* ptr, size_t new_size)$/;"	f
+ftk_allocator_zalloc	ftk_allocator.c	/^void* ftk_allocator_zalloc(FtkAllocator* thiz, size_t size)$/;"	f
+ftk_allocator_zfree	ftk_allocator.c	/^void  ftk_allocator_zfree(FtkAllocator* thiz, void* ptr, size_t size)$/;"	f
+ftk_default_allocator	ftk_globals.c	/^FtkAllocator*      ftk_default_allocator(void)$/;"	f
+ftk_default_bitmap_factory	ftk_globals.c	/^FtkBitmapFactory* ftk_default_bitmap_factory(void)$/;"	f
+ftk_default_config	ftk_globals.c	/^FtkConfig*         ftk_default_config(void)$/;"	f
+ftk_default_display	ftk_globals.c	/^FtkDisplay*       ftk_default_display(void)$/;"	f
+ftk_default_font	ftk_globals.c	/^FtkFont*          ftk_default_font(void)$/;"	f
+ftk_default_input_method_manager	ftk_globals.c	/^FtkInputMethodManager* ftk_default_input_method_manager(void)$/;"	f
+ftk_default_input_method_preeditor	ftk_globals.c	/^FtkImPreeditor* ftk_default_input_method_preeditor(void)$/;"	f
+ftk_default_log_level	ftk_globals.c	/^FtkLogLevel       ftk_default_log_level(void)$/;"	f
+ftk_default_main_loop	ftk_globals.c	/^FtkMainLoop*      ftk_default_main_loop(void)$/;"	f
+ftk_default_sources_manager	ftk_globals.c	/^FtkSourcesManager* ftk_default_sources_manager(void)$/;"	f
+ftk_default_status_panel	ftk_globals.c	/^FtkWidget*        ftk_default_status_panel(void)$/;"	f
+ftk_default_text_layout	ftk_globals.c	/^FtkTextLayout*     ftk_default_text_layout(void)$/;"	f
+ftk_default_theme	ftk_globals.c	/^FtkTheme*          ftk_default_theme(void)$/;"	f
+ftk_default_wnd_manager	ftk_globals.c	/^FtkWndManager*    ftk_default_wnd_manager(void)$/;"	f
+ftk_deinit	ftk.c	/^void ftk_deinit(void)$/;"	f
+ftk_demo_init	demo/test.c	/^Ret ftk_demo_init(int argc, char* argv[])$/;"	f
+ftk_enable_curosr	ftk.c	/^static Ret ftk_enable_curosr(void)$/;"	f	file:
+ftk_get_relative_time	os/linux/ftk_linux.c	/^size_t ftk_get_relative_time(void)$/;"	f
+ftk_getcwd	os/linux/ftk_linux.h	54;"	d
+ftk_init	ftk.c	/^Ret ftk_init(int argc, char* argv[])$/;"	f
+ftk_init_bitmap_factory	ftk.c	/^static Ret ftk_init_bitmap_factory(void)$/;"	f	file:
+ftk_init_font	ftk.c	/^static Ret ftk_init_font(void)$/;"	f	file:
+ftk_init_panel	ftk.c	/^static void ftk_init_panel(void)$/;"	f	file:
+ftk_init_theme	ftk.c	/^static Ret ftk_init_theme(const char* theme)$/;"	f	file:
+ftk_install_crash_signal	os/linux/ftk_linux.c	/^static void ftk_install_crash_signal(void)$/;"	f	file:
+ftk_main_loop_add_source	ftk_main_loop.c	/^Ret ftk_main_loop_add_source(FtkMainLoop* thiz, FtkSource* source)$/;"	f
+ftk_main_loop_create	ftk_main_loop_select.c	/^FtkMainLoop* ftk_main_loop_create(FtkSourcesManager* sources_manager)$/;"	f
+ftk_main_loop_destroy	ftk_main_loop_select.c	/^void ftk_main_loop_destroy(FtkMainLoop* thiz)$/;"	f
+ftk_main_loop_quit	ftk_main_loop_select.c	/^Ret ftk_main_loop_quit(FtkMainLoop* thiz)$/;"	f
+ftk_main_loop_remove_source	ftk_main_loop.c	/^Ret ftk_main_loop_remove_source(FtkMainLoop* thiz, FtkSource* source)$/;"	f
+ftk_main_loop_run	ftk_main_loop_select.c	/^Ret ftk_main_loop_run(FtkMainLoop* thiz)$/;"	f
+ftk_mmap_create	os/linux/ftk_mmap_linux.c	/^FtkMmap* ftk_mmap_create(const char* filename, size_t offset, size_t size)$/;"	f
+ftk_mmap_data	os/linux/ftk_mmap_linux.c	/^void*    ftk_mmap_data(FtkMmap* thiz)$/;"	f
+ftk_mmap_destroy	os/linux/ftk_mmap_linux.c	/^void     ftk_mmap_destroy(FtkMmap* thiz)$/;"	f
+ftk_mmap_exist	os/linux/ftk_mmap_linux.c	/^int      ftk_mmap_exist(const char* filename)$/;"	f
+ftk_mmap_length	os/linux/ftk_mmap_linux.c	/^size_t   ftk_mmap_length(FtkMmap* thiz)$/;"	f
+ftk_move_cursor	ftk.c	/^static Ret ftk_move_cursor(void* ctx, void* obj)$/;"	f	file:
+ftk_pipe_close	os/linux/ftk_linux.h	58;"	d
+ftk_pipe_pair	os/linux/ftk_linux.h	57;"	d
+ftk_pipe_recv	os/linux/ftk_linux.h	59;"	d
+ftk_pipe_send	os/linux/ftk_linux.h	60;"	d
+ftk_platform_deinit	os/linux/ftk_linux.c	/^void ftk_platform_deinit(void)$/;"	f
+ftk_platform_init	os/linux/ftk_linux.c	/^int ftk_platform_init(int argc, char** argv)$/;"	f
+ftk_primary_source	ftk_globals.c	/^FtkSource*         ftk_primary_source(void)$/;"	f
+ftk_quit	ftk.c	/^void ftk_quit(void)$/;"	f
+ftk_run	ftk.c	/^Ret ftk_run(void)$/;"	f
+ftk_set_allocator	ftk_globals.c	/^void ftk_set_allocator(FtkAllocator* allocator)$/;"	f
+ftk_set_bitmap_factory	ftk_globals.c	/^void ftk_set_bitmap_factory(FtkBitmapFactory* bitmap_factory)$/;"	f
+ftk_set_config	ftk_globals.c	/^void ftk_set_config(FtkConfig* config)$/;"	f
+ftk_set_display	ftk_globals.c	/^void ftk_set_display(FtkDisplay* display)$/;"	f
+ftk_set_font	ftk_globals.c	/^void ftk_set_font(FtkFont* font)$/;"	f
+ftk_set_input_method_manager	ftk_globals.c	/^void ftk_set_input_method_manager(FtkInputMethodManager* input_manager_manager)$/;"	f
+ftk_set_input_method_preeditor	ftk_globals.c	/^void ftk_set_input_method_preeditor(FtkImPreeditor* input_method_preeditor)$/;"	f
+ftk_set_log_level	ftk_globals.c	/^void ftk_set_log_level(FtkLogLevel level)$/;"	f
+ftk_set_main_loop	ftk_globals.c	/^void ftk_set_main_loop(FtkMainLoop* main_loop)$/;"	f
+ftk_set_primary_source	ftk_globals.c	/^void ftk_set_primary_source(FtkSource* source)$/;"	f
+ftk_set_shared_canvas	ftk_globals.c	/^void ftk_set_shared_canvas(FtkCanvas* canvas)$/;"	f
+ftk_set_sources_manager	ftk_globals.c	/^void ftk_set_sources_manager(FtkSourcesManager* sources_manager)$/;"	f
+ftk_set_status_panel	ftk_globals.c	/^void ftk_set_status_panel(FtkWidget* status_panel)$/;"	f
+ftk_set_text_layout	ftk_globals.c	/^void ftk_set_text_layout(FtkTextLayout* text_layout)$/;"	f
+ftk_set_theme	ftk_globals.c	/^void ftk_set_theme(FtkTheme* theme)$/;"	f
+ftk_set_tty_mode	os/linux/ftk_linux.c	/^static int ftk_set_tty_mode(int graphics)$/;"	f	file:
+ftk_set_wnd_manager	ftk_globals.c	/^void ftk_set_wnd_manager(FtkWndManager* wnd_manager)$/;"	f
+ftk_shared_canvas	ftk_globals.c	/^FtkCanvas*         ftk_shared_canvas(void)$/;"	f
+ftk_snprintf	os/linux/ftk_linux.h	52;"	d
+ftk_source_idle_check	ftk_source_idle.c	/^static int ftk_source_idle_check(FtkSource* thiz)$/;"	f	file:
+ftk_source_idle_create	ftk_source_idle.c	/^FtkSource* ftk_source_idle_create(FtkIdle action, void* user_data)$/;"	f
+ftk_source_idle_destroy	ftk_source_idle.c	/^static void ftk_source_idle_destroy(FtkSource* thiz)$/;"	f	file:
+ftk_source_idle_dispatch	ftk_source_idle.c	/^static Ret ftk_source_idle_dispatch(FtkSource* thiz)$/;"	f	file:
+ftk_source_idle_get_fd	ftk_source_idle.c	/^static int ftk_source_idle_get_fd(FtkSource* thiz)$/;"	f	file:
+ftk_source_primary_check	ftk_source_primary.c	/^static int ftk_source_primary_check(FtkSource* thiz)$/;"	f	file:
+ftk_source_primary_create	ftk_source_primary.c	/^FtkSource* ftk_source_primary_create(FtkOnEvent on_event, void* user_data)$/;"	f
+ftk_source_primary_destroy	ftk_source_primary.c	/^static void ftk_source_primary_destroy(FtkSource* thiz)$/;"	f	file:
+ftk_source_primary_dispatch	ftk_source_primary.c	/^static Ret ftk_source_primary_dispatch(FtkSource* thiz)$/;"	f	file:
+ftk_source_primary_get_fd	ftk_source_primary.c	/^static int ftk_source_primary_get_fd(FtkSource* thiz)$/;"	f	file:
+ftk_source_queue_event	ftk_source_primary.c	/^Ret ftk_source_queue_event(FtkSource* thiz, FtkEvent* event)$/;"	f
+ftk_source_timer_calc_timer	ftk_source_timer.c	/^static void ftk_source_timer_calc_timer(PrivInfo* priv)$/;"	f	file:
+ftk_source_timer_check	ftk_source_timer.c	/^static int ftk_source_timer_check(FtkSource* thiz)$/;"	f	file:
+ftk_source_timer_create	ftk_source_timer.c	/^FtkSource* ftk_source_timer_create(int interval, FtkTimer action, void* user_data)$/;"	f
+ftk_source_timer_destroy	ftk_source_timer.c	/^static void ftk_source_timer_destroy(FtkSource* thiz)$/;"	f	file:
+ftk_source_timer_dispatch	ftk_source_timer.c	/^static Ret ftk_source_timer_dispatch(FtkSource* thiz)$/;"	f	file:
+ftk_source_timer_get_fd	ftk_source_timer.c	/^static int ftk_source_timer_get_fd(FtkSource* thiz)$/;"	f	file:
+ftk_source_timer_modify	ftk_source_timer.c	/^Ret ftk_source_timer_modify(FtkSource* thiz, int interval)$/;"	f
+ftk_source_timer_reset	ftk_source_timer.c	/^Ret ftk_source_timer_reset(FtkSource* thiz)$/;"	f
+ftk_sources_manager_add	ftk_sources_manager.c	/^Ret  ftk_sources_manager_add(FtkSourcesManager* thiz, FtkSource* source)$/;"	f
+ftk_sources_manager_create	ftk_sources_manager.c	/^FtkSourcesManager* ftk_sources_manager_create(int max_source_nr)$/;"	f
+ftk_sources_manager_destroy	ftk_sources_manager.c	/^void ftk_sources_manager_destroy(FtkSourcesManager* thiz)$/;"	f
+ftk_sources_manager_get	ftk_sources_manager.c	/^FtkSource* ftk_sources_manager_get(FtkSourcesManager* thiz, int i)$/;"	f
+ftk_sources_manager_get_count	ftk_sources_manager.c	/^int  ftk_sources_manager_get_count(FtkSourcesManager* thiz)$/;"	f
+ftk_sources_manager_need_refresh	ftk_sources_manager.c	/^int ftk_sources_manager_need_refresh(FtkSourcesManager* thiz)$/;"	f
+ftk_sources_manager_remove	ftk_sources_manager.c	/^Ret  ftk_sources_manager_remove(FtkSourcesManager* thiz, FtkSource* source)$/;"	f
+ftk_sources_manager_set_need_refresh	ftk_sources_manager.c	/^Ret  ftk_sources_manager_set_need_refresh(FtkSourcesManager* thiz)$/;"	f
+ftk_sscanf	os/linux/ftk_linux.h	55;"	d
+ftk_strdup	ftk_allocator.c	/^char* ftk_strdup(const char* str)$/;"	f
+ftk_strncpy	os/linux/ftk_linux.h	51;"	d
+ftk_vsnprintf	os/linux/ftk_linux.h	53;"	d
+g	ftk_typedef.h	/^	unsigned char g;$/;"	m	struct:_FtkColor
+g_default_allocator	ftk_allocator_default.c	/^static const FtkAllocator g_default_allocator =$/;"	v	file:
+g_globals	ftk_globals.c	/^}g_globals;$/;"	v	typeref:struct:_FtkGlobals
+gettext	ftk_typedef.h	326;"	d
+height	ftk_typedef.h	/^	int height;$/;"	m	struct:_FtkRect
+host	os/linux/Makefile	/^host = i686-pc-linux-gnu$/;"	m
+host_alias	os/linux/Makefile	/^host_alias = $/;"	m
+host_cpu	os/linux/Makefile	/^host_cpu = i686$/;"	m
+host_os	os/linux/Makefile	/^host_os = linux-gnu$/;"	m
+host_triplet	os/linux/Makefile	/^host_triplet = i686-pc-linux-gnu$/;"	m
+host_vendor	os/linux/Makefile	/^host_vendor = pc$/;"	m
+htmldir	os/linux/Makefile	/^htmldir = ${docdir}$/;"	m
+includedir	os/linux/Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	os/linux/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+input_manager_manager	ftk_globals.c	/^	FtkInputMethodManager* input_manager_manager;$/;"	m	struct:_FtkGlobals	file:
+input_method_preeditor	ftk_globals.c	/^	FtkImPreeditor* input_method_preeditor;$/;"	m	struct:_FtkGlobals	file:
+install_sh	os/linux/Makefile	/^install_sh = ${SHELL} \/home\/zxsu\/hack\/ftk-read-only\/install-sh$/;"	m
+install_sh_DATA	os/linux/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	os/linux/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	os/linux/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+interval	ftk_source_timer.c	/^	size_t interval;$/;"	m	struct:_PrivInfo	file:
+key	ftk_typedef.h	/^	const char* key;$/;"	m	struct:_FtkKeyValue
+length	os/linux/ftk_mmap_linux.c	/^	size_t length;$/;"	m	struct:_FtkMmap	file:
+libdir	os/linux/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	os/linux/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+likely	ftk_typedef.h	348;"	d
+likely	ftk_typedef.h	352;"	d
+localedir	os/linux/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	os/linux/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+log_level	ftk_globals.c	/^	FtkLogLevel  log_level;$/;"	m	struct:_FtkGlobals	file:
+main	ftk_source_idle.c	/^int main(int argc, char* argv[])$/;"	f
+main_loop	ftk_globals.c	/^	FtkMainLoop* main_loop;$/;"	m	struct:_FtkGlobals	file:
+mandir	os/linux/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+max_allocated	ftk_allocator_profile.c	/^	int max_allocated;$/;"	m	struct:_PrivInfo	file:
+max_source_nr	ftk_sources_manager.c	/^	int max_source_nr;$/;"	m	struct:_FtkSourcesManager	file:
+mkdir_p	os/linux/Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	os/linux/Makefile	/^mkinstalldirs = $(SHELL) $(top_srcdir)\/mkinstalldirs$/;"	m
+my_action	ftk_source_idle.c	/^Ret my_action(void* user_data)$/;"	f
+need_refresh	ftk_sources_manager.c	/^	int need_refresh;$/;"	m	struct:_FtkSourcesManager	file:
+next_time	ftk_source_timer.c	/^	size_t next_time;$/;"	m	struct:_PrivInfo	file:
+oldincludedir	os/linux/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+on_event	ftk_source_primary.c	/^	FtkOnEvent on_event;$/;"	m	struct:_PrivInfo	file:
+on_wnd_manager_global_event	ftk.c	/^static Ret on_wnd_manager_global_event(void* ctx, void* obj)$/;"	f	file:
+pdfdir	os/linux/Makefile	/^pdfdir = ${docdir}$/;"	m
+pipe	ftk_source_primary.c	/^	FtkPipe* pipe;$/;"	m	struct:_PrivInfo	file:
+pkgdatadir	os/linux/Makefile	/^pkgdatadir = $(datadir)\/ftk$/;"	m
+pkgincludedir	os/linux/Makefile	/^pkgincludedir = $(includedir)\/ftk$/;"	m
+pkglibdir	os/linux/Makefile	/^pkglibdir = $(libdir)\/ftk$/;"	m
+pkglibexecdir	os/linux/Makefile	/^pkglibexecdir = $(libexecdir)\/ftk$/;"	m
+prefix	os/linux/Makefile	/^prefix = \/usr\/local$/;"	m
+primary_source	ftk_globals.c	/^	FtkSource*   primary_source;$/;"	m	struct:_FtkGlobals	file:
+priv	ftk_allocator.h	/^	char priv[ZERO_LEN_ARRAY];$/;"	m	struct:_FtkAllocator
+profile_begin	ftk_typedef.h	/^static size_t profile_begin;$/;"	v
+program_transform_name	os/linux/Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	os/linux/Makefile	/^psdir = ${docdir}$/;"	m
+r	ftk_typedef.h	/^	unsigned char r;$/;"	m	struct:_FtkColor
+raw_text	ftk_typedef.h	/^	char raw_text[FTK_IM_RAW_TEXT_LENGTH + 1];$/;"	m	struct:_FtkCommitInfo
+realloc	ftk_allocator.h	/^	FtkAllocatorRealloc realloc;$/;"	m	struct:_FtkAllocator
+return_if_fail	ftk_typedef.h	216;"	d
+return_val_if_fail	ftk_typedef.h	217;"	d
+running	ftk_main_loop_select.c	/^	int running;$/;"	m	struct:_FtkMainLoop	file:
+sbindir	os/linux/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sharedstatedir	os/linux/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+signal_handler	os/linux/ftk_linux.c	/^static void signal_handler(int sig)$/;"	f	file:
+signal_int_handler	os/linux/ftk_linux.c	/^static void signal_int_handler(int sig)$/;"	f	file:
+source_nr	ftk_sources_manager.c	/^	int source_nr;$/;"	m	struct:_FtkSourcesManager	file:
+sources	ftk_sources_manager.c	/^	FtkSource* sources[1];$/;"	m	struct:_FtkSourcesManager	file:
+sources_manager	ftk_globals.c	/^	FtkSourcesManager* sources_manager;$/;"	m	struct:_FtkGlobals	file:
+sources_manager	ftk_main_loop_select.c	/^	FtkSourcesManager* sources_manager;$/;"	m	struct:_FtkMainLoop	file:
+srcdir	os/linux/Makefile	/^srcdir = .$/;"	m
+status_panel	ftk_globals.c	/^	FtkWidget*   status_panel;$/;"	m	struct:_FtkGlobals	file:
+subdir	os/linux/Makefile	/^subdir = src\/os\/linux$/;"	m
+sysconfdir	os/linux/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+target_alias	os/linux/Makefile	/^target_alias = $/;"	m
+text_layout	ftk_globals.c	/^	FtkTextLayout* text_layout;$/;"	m	struct:_FtkGlobals	file:
+textdomain	ftk_typedef.h	325;"	d
+theme	ftk_globals.c	/^	FtkTheme* theme;$/;"	m	struct:_FtkGlobals	file:
+top_build_prefix	os/linux/Makefile	/^top_build_prefix = ..\/..\/..\/$/;"	m
+top_builddir	os/linux/Makefile	/^top_builddir = ..\/..\/..$/;"	m
+top_srcdir	os/linux/Makefile	/^top_srcdir = ..\/..\/..$/;"	m
+total_allocated	ftk_allocator_profile.c	/^	int total_allocated;$/;"	m	struct:_PrivInfo	file:
+transform	os/linux/Makefile	/^transform = $(program_transform_name)$/;"	m
+unlikely	ftk_typedef.h	349;"	d
+unlikely	ftk_typedef.h	353;"	d
+user_data	ftk_source_idle.c	/^	void* user_data;$/;"	m	struct:_PrivInfo	file:
+user_data	ftk_source_primary.c	/^	void* user_data;$/;"	m	struct:_PrivInfo	file:
+user_data	ftk_source_timer.c	/^	void* user_data;$/;"	m	struct:_PrivInfo	file:
+value	ftk_typedef.h	/^	const char* value;$/;"	m	struct:_FtkKeyValue
+width	ftk_typedef.h	/^	int width;$/;"	m	struct:_FtkRect
+wnd_manager	ftk_globals.c	/^	FtkWndManager* wnd_manager;$/;"	m	struct:_FtkGlobals	file:
+x	ftk_typedef.h	/^	int x;$/;"	m	struct:_FtkPoint
+x	ftk_typedef.h	/^	int x;$/;"	m	struct:_FtkRect
+y	ftk_typedef.h	/^	int y;$/;"	m	struct:_FtkPoint
+y	ftk_typedef.h	/^	int y;$/;"	m	struct:_FtkRect

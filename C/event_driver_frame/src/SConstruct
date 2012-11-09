@@ -1,0 +1,7 @@
+event_test_env = Environment()
+env_flags = event_test_env.ParseFlags("-Wall -g")
+event_test_env.MergeFlags(env_flags)
+
+event_test_env.Program("event_test", ['main.c', 'frog_main_loop.c', 'frog_sources_manager.c',
+									  'frog_source_primary.c', 'frog_pipe_socket.c', 
+									  'frog_source_timer.c'])

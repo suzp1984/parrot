@@ -1,0 +1,6 @@
+log_env = Environment()
+flags = log_env.ParseFlags("-Wall -g -DFTK_LOG_TEST")
+log_env.MergeFlags(flags)
+
+log_env.Program("log_test", ['ftk_log.c']);
+

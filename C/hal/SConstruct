@@ -1,0 +1,11 @@
+lib_env = Environment()
+
+libhardware = lib_env.SharedLibrary('hardware', 'hardware.c')
+lib_env.SharedLibrary('test', 'test.c')
+print libhardware
+
+main_env = Environment()
+f = main_env.ParseFlags("-Wall -g -ldl")
+main_env.MergeFlags(f)
+
+main_env.Program('main', 'main.c', LIBS=[libhardware, 'dl'], LIBPATH='.')

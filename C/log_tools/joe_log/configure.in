@@ -1,0 +1,48 @@
+#                                               -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
+
+AC_PREREQ([2.63])
+AC_INIT([my_log], [0.1], [suzp1984@gmail.com])
+AC_CONFIG_SRCDIR([src/logger.h])
+AC_CONFIG_HEADERS([config.h])
+
+AM_INIT_AUTOMAKE(my_log, 0.1)
+# Checks for programs.
+AC_PROG_CC
+
+# Checks for libraries.
+
+# Checks for header files.
+AC_CHECK_HEADERS([stdlib.h string.h])
+
+AC_ARG_WITH(logengine, [AC_HELP_STRING([--with-log=default|log4c],
+					   [use which logengine])])
+
+#CFLAGS="$CFLAGS"
+case "$with_log" in
+	log4c*)
+		logengine="log4c" 
+		AC_CHECK_LIB([log4c], [main])
+		LOG4C_CFLAGS="-DUSE_LOG4C"
+		LOG4C_LDFLAGS="-llog4c" ;;
+	*)
+		logengine="default" ;;
+esac
+
+AM_CONDITIONAL(USE_LOG4C, test "$logengine" = "log4c")
+AC_SUBST(LOG4C_CFLAGS)
+AC_SUBST(LOG4C_LDFLAGS)
+
+# Checks for typedefs, structures, and compiler characteristics.
+
+# Checks for library functions.
+
+AC_CONFIG_FILES([Makefile
+                 src/Makefile])
+AC_OUTPUT
+echo =================================
+echo with-log=$with_log
+echo =================================
+echo LOG4C_CFLAGS=$LOG4C_CFLAGS
+echo LOG4C_LDFLAGS=$LOG4C_LDFLAGS
+echo =================================

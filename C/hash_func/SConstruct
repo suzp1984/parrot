@@ -1,0 +1,11 @@
+hash_env = Environment()
+hash_flag = hash_env.ParseFlags("-Wall -g -DHASH_UTILS_TEST")
+hash_env.MergeFlags(hash_flag)
+
+hash_env.Program("test_hash", ['hash_utils.c'])
+
+md5_env = Environment()
+md5_flag = md5_env.ParseFlags("-Wall -g -lssl -lcrypto -ldl -lz")
+md5_env.MergeFlags(md5_flag)
+
+md5_env.Program("test_md5", ['md5_test.c'])

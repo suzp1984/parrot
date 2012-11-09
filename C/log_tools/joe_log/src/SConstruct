@@ -1,0 +1,12 @@
+log4c_t = Environment()
+log4c_f = log4c_t.ParseFlags("-Wall -g -llog4c -DUSE_LOG4C")
+log4c_t.MergeFlags(log4c_f)
+
+stdio_t = Environment()
+stdio_f = stdio_t.ParseFlags("-Wall -g")
+stdio_t.MergeFlags(stdio_f)
+
+
+log4c_t.Program(["hello.c", "userloc_formatter.c"])
+#stdio_t.Program(["hello.c"])
+

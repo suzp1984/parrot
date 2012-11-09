@@ -1,0 +1,46 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+_verbose_message	sonald.c	/^char* _verbose_message(DBusMessage *msg) {$/;"	f
+_verbose_timeout	sonald.c	/^char* _verbose_timeout(DBusTimeout *timeout) {$/;"	f
+_verbose_watch	sonald.c	/^char* _verbose_watch(DBusWatch *watch) {$/;"	f
+dbus_process_msg_loop	sonald.c	/^int dbus_process_msg_loop() {$/;"	f
+err_quit	sonald.c	/^void err_quit(const char *fmt, ...) {$/;"	f
+handle_method_return	sonald.c	/^DBusHandlerResult handle_method_return(DBusConnection *conn,$/;"	f
+main	sonald.c	/^int main(int argc, char **argv) {$/;"	f
+msgFilter	sonald.c	/^DBusHandlerResult msgFilter(DBusConnection *conn,$/;"	f
+next	sonald.c	/^	struct seriallist_t *next;$/;"	m	struct:seriallist_t	typeref:struct:seriallist_t::seriallist_t	file:
+next	sonald.c	/^	struct timeoutlist_t *next;$/;"	m	struct:timeoutlist_t	typeref:struct:timeoutlist_t::timeoutlist_t	file:
+next	sonald.c	/^	struct watchlist_t *next;$/;"	m	struct:watchlist_t	typeref:struct:watchlist_t::watchlist_t	file:
+objectPathVTable	sonald.c	/^DBusObjectPathVTable objectPathVTable[] = {$/;"	v
+objectPaths	sonald.c	/^char *objectPaths[] = {$/;"	v
+object_csy_handler	sonald.c	/^DBusHandlerResult object_csy_handler(DBusConnection* conn,$/;"	f
+object_dbus_handler	sonald.c	/^DBusHandlerResult object_dbus_handler(DBusConnection* conn,$/;"	f
+object_unregister_handler	sonald.c	/^void object_unregister_handler(DBusConnection* conn, void* data) {$/;"	f
+pendingCallNotify	sonald.c	/^void pendingCallNotify(DBusPendingCall *pending, void *data) {$/;"	f
+reply_to_method_call	sonald.c	/^int reply_to_method_call(DBusMessage *msg, DBusConnection *conn) {$/;"	f
+send_random_method_expecting_reply	sonald.c	/^void send_random_method_expecting_reply(DBusConnection *conn) {$/;"	f
+send_random_signal	sonald.c	/^void send_random_signal(DBusConnection *conn) {$/;"	f
+serial	sonald.c	/^	dbus_uint32_t serial;$/;"	m	struct:seriallist_t	file:
+seriallist	sonald.c	/^} *seriallist = NULL;$/;"	v	typeref:struct:seriallist_t	file:
+seriallist_t	sonald.c	/^static struct seriallist_t {$/;"	s	file:
+subsection_com_handler	sonald.c	/^DBusHandlerResult subsection_com_handler(DBusConnection* conn,$/;"	f
+subsection_com_redflag_handler	sonald.c	/^DBusHandlerResult subsection_com_redflag_handler(DBusConnection* conn,$/;"	f
+subsection_org_freedesktop_handler	sonald.c	/^DBusHandlerResult subsection_org_freedesktop_handler($/;"	f
+timeout	sonald.c	/^	DBusTimeout *timeout;$/;"	m	struct:timeoutlist_t	file:
+timeoutAddNotify	sonald.c	/^dbus_bool_t timeoutAddNotify(DBusTimeout *timeout, void *data) {$/;"	f
+timeoutHandle	sonald.c	/^void timeoutHandle() {$/;"	f
+timeoutRemoveNotify	sonald.c	/^void timeoutRemoveNotify(DBusTimeout *timeout, void *data) {$/;"	f
+timeoutToggleNotify	sonald.c	/^void timeoutToggleNotify(DBusTimeout *timeout, void *data) {$/;"	f
+timeoutlist	sonald.c	/^} *timeoutlist = NULL;$/;"	v	typeref:struct:timeoutlist_t	file:
+timeoutlist_t	sonald.c	/^static struct timeoutlist_t {$/;"	s	file:
+watch	sonald.c	/^	DBusWatch *watch;$/;"	m	struct:watchlist_t	file:
+watchAddNotify	sonald.c	/^dbus_bool_t watchAddNotify(DBusWatch *watch, void *data) {$/;"	f
+watchHandler	sonald.c	/^dbus_bool_t watchHandler() {$/;"	f
+watchRemoveNotify	sonald.c	/^void watchRemoveNotify(DBusWatch *watch, void *data) {$/;"	f
+watchToggleNotify	sonald.c	/^void watchToggleNotify(DBusWatch *watch, void *data) {$/;"	f
+watchlist	sonald.c	/^static struct watchlist_t *watchlist = NULL;$/;"	v	typeref:struct:watchlist_t	file:
+watchlist_t	sonald.c	/^struct watchlist_t {$/;"	s	file:

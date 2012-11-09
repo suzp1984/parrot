@@ -1,0 +1,7 @@
+import glob
+
+goption_sample = ['goption_sample.c']
+test_prog = Program(goption_sample, LIBS=['glib-2.0'], CCFLAGS='-Wall -g -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include')
+
+Program('g_key_file_sample.c', LIBS=['glib-2.0'], CCFLAGS='-Wall -g  -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include')
+Decider('timestamp-match')

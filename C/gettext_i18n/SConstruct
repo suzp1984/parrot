@@ -1,0 +1,5 @@
+env = Environment()
+flags_env = env.ParseFlags("-Wall -g")
+env.MergeFlags(flags_env)
+
+env.Program("foonly", ['foonly.c'])

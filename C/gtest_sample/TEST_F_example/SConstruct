@@ -1,0 +1,6 @@
+test_e = Environment()
+test_flags = test_e.ParseFlags("-Wall -g -lgtest -lgtest_main -lpthread")
+test_e.MergeFlags(test_flags)
+
+
+test_e.Program("foo_test", ['foo.cpp', 'test.cpp'])

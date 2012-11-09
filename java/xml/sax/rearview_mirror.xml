@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rearview_mirror version="1">
+	<item id="navigation_sc_number" value="1000" />
+	<item id="navigation_sc_ip" value="10.0.0.172" />
+	<item id="navigation_sc_sms_number" value="" />
+	<item id="home_location" value="shenzhen" />
+	<item id="park_alarm_distance" value="500" />
+	<item id="park_alarm_destination_number" value="15986712047" />
+	<item id="park_alarm_message" value="您的车已经被移动" />
+	<item id="park_alarm_interval" value="3" />
+	<array name="port_table">
+		<record cmd="01" port="00" />
+		<record cmd="02" port="5000" />
+		<record cmd="03" port="5001" />
+	</array>
+</rearview_mirror>

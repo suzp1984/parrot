@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ActiveObjectEngine	src/com/zpcat/sample/ActiveObjectEngine.java	/^public class ActiveObjectEngine {$/;"	c
+Command	src/com/zpcat/sample/Command.java	/^public interface Command {$/;"	i
+DelayedTyper	src/com/zpcat/sample/DelayedTyper.java	/^    public DelayedTyper(long delay, char c) {$/;"	m	class:DelayedTyper
+DelayedTyper	src/com/zpcat/sample/DelayedTyper.java	/^public class DelayedTyper implements Command {$/;"	c
+SleepCommand	src/com/zpcat/sample/SleepCommand.java	/^    public SleepCommand(long milliseconds, ActiveObjectEngine e, $/;"	m	class:SleepCommand
+SleepCommand	src/com/zpcat/sample/SleepCommand.java	/^public class SleepCommand implements Command {$/;"	c
+addCommand	src/com/zpcat/sample/ActiveObjectEngine.java	/^    public void addCommand(Command c) {$/;"	m	class:ActiveObjectEngine
+com.zpcat.sample	src/com/zpcat/sample/ActiveObjectEngine.java	/^package com.zpcat.sample;$/;"	p
+com.zpcat.sample	src/com/zpcat/sample/Command.java	/^package com.zpcat.sample;$/;"	p
+com.zpcat.sample	src/com/zpcat/sample/DelayedTyper.java	/^package com.zpcat.sample;$/;"	p
+com.zpcat.sample	src/com/zpcat/sample/SleepCommand.java	/^package com.zpcat.sample;$/;"	p
+delayAndRepeat	src/com/zpcat/sample/DelayedTyper.java	/^    private void delayAndRepeat() {$/;"	m	class:DelayedTyper	file:
+engine	src/com/zpcat/sample/DelayedTyper.java	/^    private static ActiveObjectEngine engine = new ActiveObjectEngine();$/;"	f	class:DelayedTyper	file:
+engine	src/com/zpcat/sample/SleepCommand.java	/^    private ActiveObjectEngine engine = null;$/;"	f	class:SleepCommand	file:
+execute	src/com/zpcat/sample/Command.java	/^    public void execute() throws Exception;$/;"	m	interface:Command
+execute	src/com/zpcat/sample/DelayedTyper.java	/^    public void execute() throws Exception {$/;"	m	class:DelayedTyper
+execute	src/com/zpcat/sample/SleepCommand.java	/^    public void execute() throws Exception {$/;"	m	class:SleepCommand
+itsCommands	src/com/zpcat/sample/ActiveObjectEngine.java	/^    private LinkedList<Command> itsCommands = new LinkedList<Command>();$/;"	f	class:ActiveObjectEngine	file:
+mChar	src/com/zpcat/sample/DelayedTyper.java	/^    private char mChar;$/;"	f	class:DelayedTyper	file:
+mDelay	src/com/zpcat/sample/DelayedTyper.java	/^    private long mDelay = 0;$/;"	f	class:DelayedTyper	file:
+mWakeupCommand	src/com/zpcat/sample/SleepCommand.java	/^    private Command mWakeupCommand = null;$/;"	f	class:SleepCommand	file:
+main	src/com/zpcat/sample/DelayedTyper.java	/^    public static void main(String args[]) throws Exception {$/;"	m	class:DelayedTyper
+run	src/com/zpcat/sample/ActiveObjectEngine.java	/^    public void run() throws Exception {$/;"	m	class:ActiveObjectEngine
+sleepTime	src/com/zpcat/sample/SleepCommand.java	/^    private long sleepTime = 0;$/;"	f	class:SleepCommand	file:
+startTime	src/com/zpcat/sample/SleepCommand.java	/^    private long startTime = 0;$/;"	f	class:SleepCommand	file:
+started	src/com/zpcat/sample/SleepCommand.java	/^    private boolean started = false;$/;"	f	class:SleepCommand	file:
+stop	src/com/zpcat/sample/DelayedTyper.java	/^    private static boolean stop = false;$/;"	f	class:DelayedTyper	file:

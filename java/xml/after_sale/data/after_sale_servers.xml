@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aftersale_servers version="1">
+	<item provice="广东" company="卡美欧通讯有限公司售后中心" phone="4007701112" 
+		address="广东省惠州市仲恺高新区乐金东路7号" />
+	<item provice="黑龙江" company="哈尔滨天诚国信经贸有限公司" phone="0451-53636710"
+		address="哈尔滨市南岗区阿什河街8号恒运大厦D座2402室" />
+	<item provice="吉林" company="长春天天手机集团科技有限公司" phone="0431-82740577"
+		address="长春市人民大街762号，天天手机青岛路大卖场地下一层" />
+	<item provice="辽宁" company="大连瓦房店飞越通讯" phone="0411-66516705"
+		address="瓦房店市共济办事处大宽街二段 141号 2单元 701室" />
+	<item provice="辽宁" company="沈阳天天" phone="024-64656233" 
+		address="沈阳市沈河区小北关街72号天天手机(2楼)" /> 
+	<item provice="江苏" company="亚太电通投资集团有限公司" phone="0519-67892816"
+		address="常州市荷花池公寓19-8号" />
+	<item provice="江苏" company="盐城西天明世通" phone="0515-88230598"
+		address="江苏盐城黄海东路27号西天明手机市场世通" />
+	<item provice="江苏" company="淮安金通通讯" phone="13390803488" 
+		address="江苏省淮安市锦绣手机市场( 汽车总站旁 ) 负一楼 61 号" />
+	<item provice="江苏" company="无锡信由家" phone="13382211131"
+		address="无锡市五爱路东华数码港A02号柜台" />
+	<item provice="上海" company="上海健达" phone="021-57442990" 
+		address="上海市奉贤区柘林镇苍工路257号" />
+	<item provice="河北" company="石家庄鑫宇光商贸有限公司" phone="0311-85207290"
+		address="河北省石家庄市新华区北小街6 号太和大厦 2308 室" />
+	<item provice="河北" company="沧州市华永伟业通讯器材有限公司" phone="0317-2060996"
+		address="河北省沧州市运河区一城风景小区8 号楼二单元 102 室" />
+	<item provice="河北" company="保定海龙电子城中航通讯有限公司" phone="0312-8018693"
+		address="河北省保定市清苑县中心街鑫达通讯" />
+	<item provice="河北" company="唐山立联通讯" phone="0315-8308002" 
+		address="河北唐山市路北区翡翠城7-2-901" />
+	<item provice="山东" company="青岛情林天方商务有限公司" phone="0531-55590302"
+		address="济南市天桥区济洛路山东省通讯城三楼西区7号" />
+	<item provice="山东" company="济南桐鑫科技有限公司" phone="0531-89006680" 
+		address="济南市济洛路92号山东通讯城515房间" />
+	<item provice="山东" company="济宁通远科技" phone="0537-2210588"
+		address="山东济宁市中区龙行路路南碧水云天A座七楼702室" />
+	<item provice="山东" company="菏泽巨野县心雨联通营业厅" phone="13625403575" 
+		address="山东省菏泽巨野县心雨联通营业厅" />	
+	<item provice="山东" company="潍坊信达通讯" phone="18660626299"
+		address="山东省潍坊市潍城区仓南街44号5-2-302室" />
+	<item provice="山东" company="临沂华源手机" phone="0539-6311123"
+		address="山东省临沂市临沭县华源手机经营部" />
+	<item provice="浙江" company="台州市路桥乐典通信器材商行" phone="0576-82590958"
+		address="浙江省台州市路桥区刚泰艺鼎广场C1103 室" />
+	<item provice="浙江" company="温州镜涛通讯有限公司" phone="57789869535"
+		address="温州市鹿城区车站大道1号数码城A12" />
+	<item provice="浙江" company="衢州市博远贸易有限公司" phone="0570-3036881"
+		address="浙江省衢州市西河苑1 幢 4 单元 401 室" />
+	<item provice="浙江" company="湖州金久通信设备有限公司" phone="0572-2050338"
+		address="浙江省湖州观凤大厦4013-2" />
+	<item provice="浙江" company="金华精诚通讯设备有限公司" phone="0579-83188853"
+		address="浙江省金华市宾虹路红旗小区2 幢 1 单元 201-202 室" />
+	<item provice="内蒙古" company="内蒙古包头市金信伟业通讯设备有限公司" phone="0472-4159568"
+		address="内蒙古包头市东河区矿机小区工具厂宿舍楼4-202 室" />
+	<item provice="内蒙古" company="赤峰天地通讯" phone="0476-8357677"
+		address="内蒙古赤峰市红山区哈达西街天凯宾馆206室" />
+	<item provice="新疆" company="乌鲁木齐南方电讯有限公司" phone="0991-2313630"
+		address="新疆乌鲁木齐市新华南路8号双银大厦2406室" />
+	<item provice="湖北" company="武汉久新通讯" phone="027-82813299, 027-82813199"
+		address="湖北省武汉市汉口大智路华中通讯广场主楼410室" />
+	<item provice="山西" company="太原联硕新科技有限公司" phone="0351-4167238"
+		address="山西省太原市云路街创源大厦四单元803 室" />
+	<item provice="贵州" company="贵州宏凯电讯有限公司" phone="0851-5825720"
+		address="贵阳市都司路中天商务港17楼D座" />
+	<item provice="安徽" company="六安联发通讯" phone="15656415666"
+		address="安徽省六安市解放南路天盈星城一期15栋3单元101室" />
+	<item provice="安徽" company="安徽朗德电子" phone="0551-4257345"
+		address="安徽省合肥市临泉东路森海豪庭11栋1单元102室" />
+	<item provice="江西" company="江西省派特实业发展有限公司" phone="0791-6256725"
+		address="江西省南昌市八一大道275 号（天润手机超市）" />
+	<item provice="江西" company="江西九江和讯通讯有限公司" phone="0792-8127383"
+		address="江西省九江市浔阳路新华宾馆10 楼 1028 室" />
+	<item provice="江西" company="江西吉安创佳通讯有限公司" phone="0796-8210669"
+		address="江西省吉安市文山步行街米西大厦对面" />
+	<item provice="江西" company="江西景德镇金科通讯有限公司" phone="0798-8435998"
+		address="江西省景德镇市珠山区胜利路四十一号" />
+	<item provice="江西" company="上饶飞扬通讯实业有限公司" phone="0793-7903199"
+		address="江西省上饶市抗建中路30号" />
+	<item provice="江西" company="赣州飞扬通讯实业有限公司" phone="0797-8209383"
+		address="赣州市章贡区环城路19号3栋2单元303室" />
+	<item provice="重庆" company="重庆朗开科技有限公司" phone="023-89129290"
+		address="重庆市石桥铺一城精英国际37-4-5-6" />
+	<item provice="四川" company="成都讯辉科技有限公司" phone="028-86765169"
+		address="四川省成都市太升路锦阳商厦24 楼 C 座" />
+	<item provice="云南" company="昆明云奥华格通讯设备有限公司" phone="0871-8272020" 
+		address="昆明市北京路128号联贸大厦二楼083号" />
+	<item provice="广西" company="南宁京华高格通讯有限公司" phone="0771-6115785"
+		address="南宁市民生路2-3 号源城投资 B 座 2503" />
+	<item provice="广东" company="广州巨众手机连锁" phone="020-32667777"
+		address="广东省广州市增城区新塘镇顶好大厦800" />
+	<item provice="海南" company="海口鼎诚通讯有限公司" phone="0898-36301366"
+		address="海口市大同路25 号华发大厦 B1408 室" />
+	<item provice="福建" company="泉州天勤贸易有限公司" phone="0595-28899900"
+		address="泉州市桥南片区锦洲瑞苑3栋3单元1112号" />
+	<item provice="福建" company="三明创新电子数码有限公司" phone="0598-8253825"
+		address="福建省三明市梅列区崇桂新村53幢E座202（广景城玉兰阁）" />
+	<item provice="福建" company="福州科创电子商务有限公司" phone="0591-83829505"
+		address="福建省福州市五一中路132号万都阿波罗14层1415室" />
+	<item provice="青海" company="西宁宸宇通讯有限公司" phone="0971-8232153/3938055"
+		address="青海省西宁市城西区兴海路10号1栋1单元302室" />
+	<item provice="陕西" company="世纪隆安经贸有限公司" phone="029-87260506"
+		address="西安市西新街11 号海星大厦 13 层 D18 室" />
+	<item provice="广东" company="韶关速讯" phone="0751-8886078"
+		address="韶关市复兴路大文路商城B 座 601 室" />
+	<item provice="广东" company="廉江市星语通讯有限公司" phone="0759-6687017"
+		address="廉江市环市北路111 号新域电讯" />
+	<item provice="广东" company="潮州东星数码" phone="0768-2303000"
+		address="潮州市奎元广场B 幢左侧东星数码" />
+	<item provice="甘肃" company="兰州夏新银翔通信有限责任公司" phone="0931-8839538"
+		address="兰州市金昌北路15号宏丰大厦B座1903室" />
+	<item provice="宁夏" company="银川银翔通信" phone="0951-6191711/722"
+		address="银川市中山南街31号商务信息大厦1105 室" />
+	<item provice="河南" company="卡美欧河南郑州办事处" phone="0371-66760330"
+		address="河南省郑州市郑州大酒店B 座 10 楼 1007 室" />
+	<item provice="河南" company="开封市信程通讯器材" phone="0378-2964366"
+		address="河南省开封市龙亭区龙亭北路九鼎雅园38 号楼西单元 401 室" />
+	<item provice="河南" company="新乡老百姓通讯" phone="0373-8868123"
+		address="河南省新乡市东站金谷东方广场18 号楼东 2 单元 802 室" />
+	<item provice="河南" company="濮阳就成科技" phone="13513940033"
+		address="河南省濮阳市金堤路北段怡馨嘉苑4 号楼 1 单元 1 号" />
+	<item provice="河南" company="信阳市八方通讯" phone="0376-5099530"
+		address="河南省信阳市息县高杆灯" />
+	<item provice="河南" company="商丘朝阳通讯" phone="0370-2272055"
+		address="河南省商丘市梁园区平原路运管小区" />
+</aftersale_servers>
+

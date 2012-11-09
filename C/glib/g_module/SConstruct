@@ -1,0 +1,7 @@
+module_env = Environment()
+module_flag = module_env.ParseFlags("-Wall -g -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -Wl,--export-dynamic -pthread -lgmodule-2.0 -lrt -lglib-2.0")
+
+module_env.MergeFlags(module_flag)
+
+module_env.SharedLibrary('plugin', ['plugin.c'])
+module_env.Program('test_gmodule', ['main.c'])

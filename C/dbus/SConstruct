@@ -1,0 +1,3 @@
+import glob
+Program('sonald.c', LIBS=['dbus-1', 'pthread', 'rt'], CCFLAGS='-Wall -g  -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include  -L/lib')
+Decider('timestamp-match')

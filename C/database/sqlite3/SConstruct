@@ -1,0 +1,6 @@
+sqlit_env = Environment()
+flag = sqlit_env.ParseFlags("-Wall -g -lsqlite3")
+sqlit_env.MergeFlags(flag)
+
+sqlit_env.Program(['test_sqlite3.c'])
+sqlit_env.Program(['query_sqlite3.c'])

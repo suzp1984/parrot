@@ -1,0 +1,4 @@
+howto:
+* java, jni, native field communication:
+	an example of MediaScanner, put an object of MyMediaScannerClient to jni field. in jni field, build a wrapper class of 
+	java class MyMediaScannerClient.

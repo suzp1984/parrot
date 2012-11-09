@@ -1,0 +1,3 @@
+ant jar
+
+java -jar *.jar [option]

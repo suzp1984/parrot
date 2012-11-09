@@ -1,0 +1,22 @@
+# Chinese translations for gettext_i package
+# gettext_i 软件包的简体中文翻译.
+# Copyright (C) 2012 THE gettext_i'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gettext_i package.
+# suzhenxing <suzhenxing@topwisesz.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gettext_i 18n\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-24 14:53+0800\n"
+"PO-Revision-Date: 2012-08-24 15:00+0800\n"
+"Last-Translator: suzhenxing <suzhenxing@topwisesz.com>\n"
+"Language-Team: Chinese (simplified)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: foonly.c:5
+#, c-format
+msgid "Hello, GetText!\n"
+msgstr "你好，GetText！\n"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Description : this file should include all system input the devices 
+	that are not HCI devices such as mouse, touch-screen and keyboards.
+	Copyright (C) 2010 Malata Inc.
+-->
+
+<excluded_cases>
+  <case name="g_sensor"/>
+  <case name="m_sensor"/>
+</excluded_cases>

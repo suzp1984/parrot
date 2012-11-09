@@ -1,0 +1,4 @@
+1. xgettext -a foonly.c -o foonly.pot
+2. export LANG=zh_CN.UTF-8; msginit -i foonly.pot
+3. msgfmt zh_CN.po -o zh_CN.mo
+4. cp zh_CN.mo $(LOCALE)/zh_CN/LC_MESSAGES/foonly.mo

@@ -1,0 +1,5 @@
+outline_env = Environment()
+flags = outline_env.ParseFlags("-Wall -g -lexpat")
+outline_env.MergeFlags(flags)
+
+outline_env.Program("outline", ['outline.c'])

@@ -1,0 +1,16 @@
+import platform
+print ARGUMENTS
+
+opts = Variables()
+print opts
+print platform.system
+
+except_env = Environment()
+except_test_flags = except_env.ParseFlags("-Wall -g")
+except_env.MergeFlags(except_test_flags)
+
+# except_env.Program("except_test", ['except.c', 'except-test.c', 'assert.c'])
+except_env.Program("except_test", ['except.c', 'except-test.c'])
+
+except_env.Program("test_mem", ['mem.c', 'except.c', 'test-mem.c'])
+except_env.Program("test_memchk", ['memchk.c', 'except.c', 'test-mem.c'])

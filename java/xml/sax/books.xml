@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<books>  
+	<book pages="1000" price="$99">  
+		<name>Thinking in java</name>  
+		<version>3.0</version>  
+	</book>  
+	<book pages="800" price="$40">  
+		<name>JUnit in Action</name>  
+		<version>2.0</version>  
+	</book>  
+	<book pages="900" price="$70">  
+		<name>Lucene in Action</name>  
+		<version>2.0</version>  
+	</book>  
+</books>  

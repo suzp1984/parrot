@@ -1,0 +1,11 @@
+xml2_env = Environment()
+xml2_flags = xml2_env.ParseFlags("-Wall -g -I/usr/include/libxml2 -lxml2")
+xml2_env.MergeFlags(xml2_flags)
+
+xml2_env.Program(['create_xml.c'])
+
+xmlnode_env = Environment()
+xmlnode_flags = xmlnode_env.ParseFlags("-Wall -g -I/usr/include/libxml2 -lxml2 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -lglib-2.0 -DXMLNODE_TEST")
+xmlnode_env.MergeFlags(xmlnode_flags)
+
+xmlnode_env.Program('test_xmlnode', ['xmlnode.c'])

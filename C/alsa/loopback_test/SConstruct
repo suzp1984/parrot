@@ -1,0 +1,5 @@
+alsa_env = Environment()
+alsa_flag = alsa_env.ParseFlags("-Wall -g -lasound -lm -DECHOLOOP_CMD_TEST -lpthread")
+alsa_env.MergeFlags(alsa_flag)
+
+alsa_env.Program("test_echoloop", ['echoloop_cmd.c'])

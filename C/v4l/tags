@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DEFAULT_DEVICE	v4l.h	7;"	d
+_V4L_H_	v4l.h	2;"	d
+_v4l_struct	v4l.h	/^struct _v4l_struct$/;"	s
+capability	v4l.h	/^	struct video_capability capability;$/;"	m	struct:_v4l_struct	typeref:struct:_v4l_struct::video_capability
+fd	v4l.h	/^	int fd;$/;"	m	struct:_v4l_struct
+frame_current	v4l.h	/^	int frame_current;$/;"	m	struct:_v4l_struct
+frame_using	v4l.h	/^	int frame_using[VIDEO_MAXFRAME];$/;"	m	struct:_v4l_struct
+main	test.c	/^int main()$/;"	f
+map	v4l.h	/^	unsigned char* map;$/;"	m	struct:_v4l_struct
+mbuf	v4l.h	/^	struct video_mbuf mbuf;$/;"	m	struct:_v4l_struct	typeref:struct:_v4l_struct::video_mbuf
+mmap	v4l.h	/^	struct video_mmap mmap;$/;"	m	struct:_v4l_struct	typeref:struct:_v4l_struct::video_mmap
+picture	v4l.h	/^	struct video_picture picture;$/;"	m	struct:_v4l_struct	typeref:struct:_v4l_struct::video_picture
+v4l_close	v4l.c	/^int v4l_close(v4l_device* vd)$/;"	f
+v4l_device	v4l.h	/^typedef struct _v4l_struct v4l_device;$/;"	t	typeref:struct:_v4l_struct
+v4l_get_capability	v4l.c	/^int v4l_get_capability(v4l_device* vd)$/;"	f
+v4l_get_mbuf	v4l.c	/^int v4l_get_mbuf(v4l_device* vd)$/;"	f
+v4l_get_picture	v4l.c	/^int v4l_get_picture(v4l_device* vd)$/;"	f
+v4l_grab_frame	v4l.c	/^int v4l_grab_frame(v4l_device* vd, int frame)$/;"	f
+v4l_grab_init	v4l.c	/^int v4l_grab_init(v4l_device* vd, int width, int height)$/;"	f
+v4l_grab_picture	v4l.c	/^int v4l_grab_picture(v4l_device* vd, unsigned int size)$/;"	f
+v4l_grab_sync	v4l.c	/^int v4l_grab_sync(v4l_device* vd)$/;"	f
+v4l_mmap_init	v4l.c	/^int v4l_mmap_init(v4l_device* vd)$/;"	f
+v4l_open	v4l.c	/^int v4l_open(char* dev, v4l_device* vd) $/;"	f
+v4l_set_picture	v4l.c	/^int v4l_set_picture(v4l_device* vd, int br, int hue, int col, int cont, int white)$/;"	f
+vd	test.c	/^v4l_device vd;$/;"	v

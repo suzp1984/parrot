@@ -1,0 +1,13 @@
+HOW TO USE:
+	guitest have two cmd tools: input_event_record and input_event_player.
+	./input_event_record [a310|a1|a810]
+	./input_event_player [a310|a1|a810] [filename]
+
+	input_event_record is used to record the input_event, the event data will be stored in a file named by current time in current directory.
+	input_event_player can play the input_event stored in file.
+
+HOW TO PORTing to your machine:
+	you need to add some argument in dev_val.h. 
+
+NOTICE: you can choose the input_event according to [cat /proc/bus/input/devices], bue do not record g_sensor event.(in my a1 machine is /dev/input/event1)
+

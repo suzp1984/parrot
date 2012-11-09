@@ -1,0 +1,57 @@
+2011-5-5Liuhairong<liuhairong@topwise3g.com>
+	* ft_main.c: add camera-fore test, camera-test
+	* ft_ril.c: add on_coupling_test_handler
+	* hw/hw_led.c: modify dev path
+	* hw/hw_ril.h hw/hw_ril.c: add hw_ril_reset
+	* ft_matrix.c ft_matrix.h: modify M*M test
+	* gui/ft_input.c: add FE_MOUSE_MOVE event
+	* gui/ft_draw.h gui/ft_draw.h: add ft_bresenham_draw_line ft_draw_bold_point
+
+2011-4-26Liu Hairong<liuhairong@topwise3g.com>
+	* ft_main.c: modify gps_test
+	* ft_testcase.h ft_testcase.c: add ic_encryption auto test
+	* hw/hw_camera.c: sleep 0.1 second when camera close
+	* hw/hw_comm.c: add emmc device judge
+
+2011-3-22Liu Hairong<liuhairong@topwise3g.com>
+	* hw/hw_comm.c hw/hw_comm.h: add hw_ic_challenge
+	* hw/hw_audio.c: add hw_audio_set_route_pad
+	* ft_main.c: add N302 test, add TP calibrate
+
+2011-3-3 Liu Hairong<liuhairong@topwise3g.com>
+	* add hw/hw_gps.c hw/hw_gps.h
+	* add hw/hw_ril.c hw/hw_ril.h
+	* add hw/hw_wifi.c hw/hw_wifi.h
+	* add ft_ril.c ft_ril.h
+	* ft_main.c: add ts_calibrate
+	* ft_input.c: add multi-touch
+	* ft_draw.c: add color RGB888
+	* ft_textpad.c: add ft_text_new
+
+2010-01-29 Liu Shen <liushen@broncho.cn>
+	* gui/ft_window.c: add ft_window_set_sensitive.
+	* hw/hw_comm.c: add battery status.
+
+2010-01-25 Liu Shen <liushen@broncho.cn>
+	* hw/hw_bluetooth.c: sleep 1s when bt_disable() finish.
+
+2010-01-12 Liu Shen <liushen@broncho.cn>
+	* add ft_fm.c, ft_notepad.c, ft_testcase.c.
+	* add FM channel.
+	* add auto test support.
+	* KEY_SEND/KEY_END can respone the result.
+
+2009-11-24 Liu Shen <liushen@broncho.cn>
+	* hw/hw_led.c: use new interface of lights.
+	* hw/hw_audio.c: use libaudio to instead of shell command.
+	* ft_headset.c: new added.
+
+2009-10-24 Liu Shen <liushen@broncho.cn>
+	* hw/hw_audio.c: remove echoloop volume tunes, set loopback device to
+	BEAR.
+
+2009-10-21 Liu Shen <liushen@broncho.cn>
+	* wait for wifi init before the test.
+	* decrease echolop volume from 50 to 31.
+	* camera preview use full screen mode.
+	* get version from 'ro.build.description' system property.
