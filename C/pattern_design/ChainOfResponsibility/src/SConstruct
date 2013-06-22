@@ -1,0 +1,19 @@
+import glob
+
+Help("""
+I don't known, I don't care
+""")
+
+Progress('$TARGET\r', 
+	file=open('/dev/tty', 'w'), overwrite=True, interval=5000)
+
+
+logger_env = Environment()
+logger_sources = ['main.c', 'stdout_logger.c', 'stderr_logger.c']
+logger_flags = "-Wall -g"
+tmp_flags = logger_env.ParseFlags(logger_flags)
+logger_env.MergeFlags(tmp_flags)
+
+logger_env.Program('logger_test', logger_sources)
+
+Decider('timestamp-match')
