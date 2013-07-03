@@ -29,21 +29,28 @@
  */
 
 #include <stdlib.h>
+#include <string.h>
 
 #include "allocator_nginx.h"
 
-typedef struct {
+struct _ngx_pool_data_t;
+typedef struct _ngx_pool_data_t ngx_pool_data_t;
+
+struct _ngx_pool_data_t {
 //  u_char* alloc;
     u_char* last;
     u_char* end;
     ngx_pool_data_t* next;
-    uint_t            failed;
-} ngx_pool_data_t;
+    int            failed;
+};
 
-typedef struct {
+struct _ngx_pool_large_t;
+typedef struct _ngx_pool_large_t ngx_pool_large_t;
+
+struct _ngx_pool_large_t {
     ngx_pool_large_t     *next;
     void                 *alloc;
-} ngx_pool_large_t;
+};
 
 typedef struct {
     ngx_pool_data_t*       d;
@@ -70,10 +77,10 @@ static void* allocator_nginx_alloc_block(Allocator* thiz, size_t size)
     pd = (ngx_pool_data_t*)malloc(sizeof(ngx_pool_data_t) + pool->max);
     
     if (pd != NULL) {
-        m = pd + sizeof(ngx_pool_data_t);
+        m = (void*)pd + sizeof(ngx_pool_data_t);
         pd->next = NULL;
-        pd->last = m + size;
-        pd->end = m + pool->max;
+        pd->last = (void*)m + size;
+        pd->end = (void*)m + pool->max;
         pd->failed = 0;
     } else {
         return NULL;
@@ -94,7 +101,7 @@ static void* allocator_nginx_alloc_block(Allocator* thiz, size_t size)
 
 static void* allocator_nginx_alloc_large(Allocator* thiz, size_t size)
 {
-    PrivInfo* thiz = (PrivInfo*)thiz->priv;
+    PrivInfo* priv = (PrivInfo*)thiz->priv;
     ngx_pool_t* pool = priv->pool;
     void* p;
     ngx_pool_large_t* large;
@@ -134,7 +141,7 @@ static void* allocator_nginx_alloc(Allocator* thiz, size_t size)
     PrivInfo* priv = (PrivInfo*)thiz->priv;
     ngx_pool_t* pool = priv->pool;
     ngx_pool_data_t* pd;
-    char* m;
+    u_char* m;
 
     if (size <= pool->max) {
         pd = pool->current;
@@ -153,15 +160,60 @@ static void* allocator_nginx_alloc(Allocator* thiz, size_t size)
     return allocator_nginx_alloc_large(thiz, size);
 }
 
-static void* allocator_nginx_calloc(Allocator* thiz, size_t size)
+static void* allocator_nginx_calloc(Allocator* thiz, size_t nmemb, size_t size)
 {
+    void* p = allocator_alloc(thiz, (nmemb * size));
+    if (p) {
+        memset(p, 0, (nmemb * size));
+    }
+    
+    return p;
 }
 
-static Ret allocator_nginx_free(Allocator* thiz, void* ptr)
+static void allocator_nginx_free(Allocator* thiz, void* ptr)
 {
     PrivInfo* priv = (PrivInfo*)thiz->priv;
     ngx_pool_large_t* large = priv->pool->large;
+    
+    return_if_fail(ptr != NULL);
 
+    for (large = priv->pool->large; large; large = large->next) {
+        if (ptr == large->alloc) {
+            SAFE_FREE(ptr);
+            large->alloc = NULL;
+            return;
+        }
+    }
+}
+
+static void* allocator_nginx_realloc(Allocator* thiz, void* ptr, size_t size)
+{
+    return NULL;
+}
+
+static void allocator_nginx_destroy(Allocator* thiz)
+{
+    PrivInfo* priv = (PrivInfo*)thiz->priv;
+    ngx_pool_data_t* p;
+    ngx_pool_data_t* n;
+    ngx_pool_large_t* l;
+
+    for (l = priv->pool->large; l; l = l->next) {
+        if (l->alloc) {
+            SAFE_FREE(l->alloc);
+            l->alloc = NULL;
+        }
+    }
+    
+    for (p = priv->pool->d, n = p->next; ; p = n, n = n->next) {
+        SAFE_FREE(p);
+        if (n == NULL) {
+            break;
+        }
+    }
+    
+    SAFE_FREE(priv->pool);
+    SAFE_FREE(thiz);
 }
 
 Allocator* allocator_nginx_create(size_t size)
@@ -172,9 +224,10 @@ Allocator* allocator_nginx_create(size_t size)
     
     if (thiz != NULL) {
         PrivInfo* priv = (PrivInfo*)thiz->priv;
-        priv->pool = (ngx_pool_t*)malloc(sizeof(ngx_pool_t) + sizeof(ngx_pool_data_t) + size);
+        priv->pool = (ngx_pool_t*)malloc(sizeof(ngx_pool_t));
         
-        priv->pool->d = (ngx_pool_data_t*)((u_char*)priv->pool + sizeof(ngx_pool_t));
+        priv->pool->d = (ngx_pool_data_t*) malloc(sizeof(ngx_pool_data_t) + size);
+
         priv->pool->current = priv->pool->d;
         priv->pool->max = size;
         priv->pool->large = NULL;
@@ -185,6 +238,9 @@ Allocator* allocator_nginx_create(size_t size)
                 
         thiz->alloc = allocator_nginx_alloc;
         thiz->calloc = allocator_nginx_calloc;
+        thiz->realloc = allocator_nginx_realloc;
+        thiz->free = allocator_nginx_free;
+        thiz->destroy = allocator_nginx_destroy;
     }
 
     return thiz;

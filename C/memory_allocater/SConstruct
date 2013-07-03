@@ -1,0 +1,29 @@
+import glob
+
+Help("""
+I don't known, I don't care
+""")
+
+Progress('$TARGET\r', 
+	file=open('/dev/tty', 'w'), overwrite=True, interval=5000)
+
+# log4c_sources = ['userloc_formatter.c']
+# log4c_raw_flags = "-llog4c -DUSE_LOG4C"
+# test_sleep_flags = "-Wall -g -DSLEEP_COMMAND_TEST"
+# sleep_cmd_e = Environment()
+# #log4c_f = sleep_cmd_e.ParseFlags(test_sleep_flags + ' ' + log4c_raw_flags)
+# log4c_f = sleep_cmd_e.ParseFlags(test_sleep_flags)
+# sleep_cmd_e.MergeFlags(log4c_f)
+# 
+# #sleep_cmd_e.Program('sleep_cmd_test', ['sleep_command.c', 'type_command.c', 'active_object_engine.c', 'dlist.c'] + log4c_sources)
+# sleep_cmd_e.Program('sleep_cmd_test', ['sleep_command.c', 'type_command.c', 'active_object_engine.c', 'dlist.c'])
+
+dtyper_env = Environment()
+dtyper_sources = ['allocator_nginx.c']
+dtyper_flags = "-Wall -g -DALLOCATOR_NGINX_TEST"
+tmp_flags = dtyper_env.ParseFlags(dtyper_flags)
+dtyper_env.MergeFlags(tmp_flags)
+
+dtyper_env.Program('allocator_nginx_test', dtyper_sources)
+
+Decider('timestamp-match')
