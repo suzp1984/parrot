@@ -35,6 +35,14 @@
 
 #include "typedef.h"
 
+enum {
+    LOGGER_VERBOSE = 0,
+    LOGGER_INFO,
+    LOGGER_DEBUG,
+    LOGGER_WARNING,
+    LOGGER_ERROR,
+};
+
 struct _Logger;
 typedef struct _Logger Logger;
 
@@ -54,14 +62,26 @@ struct _Logger {
    LoggerError error;
 
    LoggerDestroy destroy;
+   int logger_level;
 
    char priv[0];
 };
+
+static inline void logger_set_level(Logger* thiz, int level)
+{
+    return_if_fail(thiz != NULL);
+    
+    thiz->logger_level = level;
+}
 
 static inline void logger_verbose(Logger* thiz, const char* format, ...)
 {
     return_if_fail(thiz != NULL && thiz->verbose != NULL);
     
+    if (thiz->logger_level > LOGGER_VERBOSE) {
+        return;    
+    }
+
     va_list ap;
     va_start(ap, format);   
 
@@ -72,6 +92,10 @@ static inline void logger_verbose(Logger* thiz, const char* format, ...)
 static inline void logger_info(Logger* thiz, const char* format, ...)
 {
     return_if_fail(thiz != NULL && thiz->info != NULL);
+
+    if (thiz->logger_level > LOGGER_INFO) {
+        return;    
+    }
     
     va_list ap;
     va_start(ap, format);
@@ -84,6 +108,10 @@ static inline void logger_debug(Logger* thiz, const char* format, ...)
 {
     return_if_fail(thiz != NULL && thiz->debug != NULL);
 
+    if (thiz->logger_level > LOGGER_DEBUG) {
+        return;    
+    }
+
     va_list ap;
     va_start(ap, format);
 
@@ -95,6 +123,10 @@ static inline void logger_warning(Logger* thiz, const char* format, ...)
 {
     return_if_fail(thiz != NULL && thiz->warning != NULL);
 
+    if (thiz->logger_level > LOGGER_WARNING) {
+        return;    
+    }
+
     va_list ap;
     va_start(ap, format);
 
@@ -105,6 +137,10 @@ static inline void logger_warning(Logger* thiz, const char* format, ...)
 static inline void logger_error(Logger* thiz, const char* format, ...)
 {
    return_if_fail(thiz != NULL && thiz->error != NULL);
+
+    if (thiz->logger_level > LOGGER_ERROR) {
+        return;    
+    }
 
     va_list ap;
     va_start(ap, format);

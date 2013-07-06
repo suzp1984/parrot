@@ -1,0 +1,2 @@
+
+gcc -Wall -g -DLOGGER_DEFAULT_TEST logger_default.c -o logger_default_test
