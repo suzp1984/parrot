@@ -3,5 +3,21 @@ env_flags = event_test_env.ParseFlags("-Wall -g")
 event_test_env.MergeFlags(env_flags)
 
 event_test_env.Program("event_test", ['main.c', 'frog_main_loop.c', 'frog_sources_manager.c',
-									  'frog_source_primary.c', 'frog_pipe_socket.c', 
+									  'frog_source_primary.c', 'frog_pipe_socket.c',
 									  'frog_source_timer.c'])
+
+module_lib_env = Environment()
+module_lib_flags = module_lib_env.ParseFlags("-Wall -g")
+module_lib = module_lib_env.SharedLibrary('hello', 'frog_module_hello.c')
+
+module_test_env = Environment()
+module_test_flags = module_test_env.ParseFlags("-Wall -g -ldl -DFROG_MODULE_TEST")
+module_test_env.MergeFlags(module_test_flags)
+
+module_test_env.Program("module_test", ['frog_module.c'])
+
+core_test_env =  Environment()
+core_test_flags =  core_test_env.ParseFlags(" -Wall -g -DFROG_CORE_TEST")
+core_test_env.MergeFlags(core_test_flags)
+
+core_test_env.Program("core_test", ['frog_core.c', 'frog_main_loop.c', 'frog_sources_manager.h', 'frog_modules_manager.h'])
