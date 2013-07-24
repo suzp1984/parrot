@@ -1,0 +1,5 @@
+env = Environment()
+
+env.ParseConfig('pkg-config --cflags --libs fftw3')
+
+env.Program(['test_dft1.c'])
