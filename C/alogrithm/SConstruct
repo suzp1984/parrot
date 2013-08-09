@@ -1,0 +1,6 @@
+env = Environment()
+
+env_flag = env.ParseFlags("-Wall -g -DALOGRITHM_TEST")
+env.MergeFlags(env_flag)
+
+env.Program(['rotate.c'])
