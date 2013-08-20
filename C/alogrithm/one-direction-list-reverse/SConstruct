@@ -1,0 +1,6 @@
+env = Environment()
+env.Append(CCFLAGS = Split('-fpermissive -Wint-to-pointer-cast'))
+
+test_slist_src = ['slist.c', 'test_slist.cpp']
+
+env.Program('test_slist', test_slist_src, LIBS=['gtest', 'gtest_main', 'pthread'])
