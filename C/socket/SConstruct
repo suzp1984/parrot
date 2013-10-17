@@ -1,0 +1,7 @@
+env = Environment()
+
+env_flag = env.ParseFlags("-Wall -g")
+env.MergeFlags(env_flag)
+
+env.Program(['unix_client.c'])
+env.Program(['unix_server.c'])

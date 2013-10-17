@@ -1,0 +1,6 @@
+import glob
+
+# kg-config --cflags glib-2.0
+
+Program(['readline-client.c', 'display.c'], LIBS=['glib-2.0', 'readline'], CCFLAGS='-Wall -g -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include')
+
