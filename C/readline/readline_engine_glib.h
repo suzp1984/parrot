@@ -1,7 +1,7 @@
 /*
- * File:    typedef.h
+ * File:    readline_engine_glib.h
  * Author:  zxsu <suzp1984@gmail.com>
- * Brief:   typedef header
+ * Brief:   realine engine powerd by glib main loop
  *
  * Copyright (c) zxsu
  *
@@ -25,19 +25,14 @@
 /*
  * History:
  * ================================================================
- * 2013-10-19 11:13 zxsu <suzp1984@gmail.com> created.
+ * 2013-10-20 12:52 zxsu <suzp1984@gmail.com> created.
  */
 
-#ifndef _TYPEDEF_H
-#define _TYPEDEF_H
+#ifndef _READLINE_ENGINE_GLIB_H
+#define _READLINE_ENGINE_GLIB_H
 
-typedef enum {
-    RET_OK,
-    RET_OOM,
-    RET_FAIL,
-    RET_INVALIAD_PARAM
-} Ret;
-#define return_if_fail(x) if (!(x)) {return;}
-#define return_val_if_fail(x, val) if (!(x)) {return (val);}
+#include "readline_engine.h"
 
-#endif /* _TYPEDEF_H */
+ReadlineEngine* glib_readline_engine_create();
+
+#endif /* _READLINE_ENGINE_GLIB_H */

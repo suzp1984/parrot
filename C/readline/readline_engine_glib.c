@@ -1,7 +1,7 @@
 /*
- * File:    typedef.h
+ * File:    readline_engine_glib.c
  * Author:  zxsu <suzp1984@gmail.com>
- * Brief:   typedef header
+ * Brief:   readline powered by glib implementation
  *
  * Copyright (c) zxsu
  *
@@ -25,19 +25,34 @@
 /*
  * History:
  * ================================================================
- * 2013-10-19 11:13 zxsu <suzp1984@gmail.com> created.
+ * 2013-10-20 12:53 zxsu <suzp1984@gmail.com> created.
  */
 
-#ifndef _TYPEDEF_H
-#define _TYPEDEF_H
+#include "readline_engine_glib.h"
+#include <stdlib.h>
+#include <glib.h>
 
-typedef enum {
-    RET_OK,
-    RET_OOM,
-    RET_FAIL,
-    RET_INVALIAD_PARAM
-} Ret;
-#define return_if_fail(x) if (!(x)) {return;}
-#define return_val_if_fail(x, val) if (!(x)) {return (val);}
+typedef struct _PrivInfo {
+    GMainLoop *main_loop;
+} PrivInfo;
 
-#endif /* _TYPEDEF_H */
+static void glib_readline_init(ReadlineEngine* thiz)
+{
+}
+
+static void glib_readline_run(ReadlineEngine* thiz)
+{
+}
+
+static Ret glib_readline_add_cmd(ReadlineEngine* thiz, CmdInterface* cmd)
+{
+}
+
+static void glib_readline_destroy(ReadlineEngine* thiz)
+{
+}
+
+ReadlineEngine* glib_readline_engine_create()
+{
+    ReadlineEngine* thiz = (ReadlineEngine*)malloc(sizeof(ReadlineEngine) + sizeof(PrivInfo));
+}
