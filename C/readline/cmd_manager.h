@@ -1,7 +1,7 @@
 /*
- * File:    help_cmd.h
+ * File:    cmd_manager.h
  * Author:  zxsu <suzp1984@gmail.com>
- * Brief:   help command interface
+ * Brief:   cmd manager header file
  *
  * Copyright (c) zxsu
  *
@@ -25,15 +25,23 @@
 /*
  * History:
  * ================================================================
- * 2013-10-19 11:25 zxsu <suzp1984@gmail.com> created.
+ * 2013-10-23 22:32 zxsu <suzp1984@gmail.com> created.
  */
 
-#ifndef _HELP_CMD_H
-#define _HELP_CMD_H
+#ifndef _CMD_MANAGER_H
+#define _CMD_MANAGER_H
 
+#include "typedef.h"
 #include "command_interface.h"
-#include "readline_engine.h"
 
-CmdInterface* help_cmd_create(ReadlineEngine* engine);
+struct _CmdManager;
+typedef struct _CmdManager CmdManager;
 
-#endif /* _HELP_CMD_H */
+CmdManager* cmd_manager_create();
+Ret cmd_manager_add_cmd(CmdManager* thiz, CmdInterface* cmd);
+size_t cmd_manager_get_count(CmdManager* thiz);
+Ret cmd_manager_get(CmdManager* thiz, size_t index, CmdInterface** cmd);
+
+void cmd_manager_destroy(CmdManager* thiz);
+
+#endif /* _CMD_MANAGER_H */

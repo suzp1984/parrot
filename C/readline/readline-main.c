@@ -34,6 +34,9 @@
 #include <glib.h>
 
 #include "display.h"
+#include "readline_engine_glib.h"
+#include "help_cmd.h"
+#include "quit_cmd.h"
 
 static GMainLoop *main_loop;
 
@@ -158,6 +161,20 @@ static guint setup_standard_input(void)
 
 int main(int argc, char* argv[])
 {
+    ReadlineEngine* rdengine = glib_readline_engine_create();
+  
+    readline_engine_add_cmd(rdengine, NULL);  
+    readline_engine_run(rdengine);
+
+    readline_engine_quit(rdengine);
+    readline_engine_destroy(rdengine);
+
+    return 0;
+}
+
+/*
+int main(int argc, char* argv[])
+{
 	guint input;
     
 	main_loop = g_main_loop_new(NULL, FALSE);
@@ -181,3 +198,4 @@ int main(int argc, char* argv[])
     
     return 0;
 }
+*/

@@ -40,12 +40,14 @@ typedef struct _ReadlineEngine ReadlineEngine;
 typedef void (*RLEInit)(ReadlineEngine* thiz);
 typedef void (*RLERun)(ReadlineEngine* thiz);
 typedef Ret (*RLEAddCmd)(ReadlineEngine* thiz, CmdInterface* cmd);
+typedef Ret (*RLEQuit)(ReadlineEngine* thiz);
 typedef void (*RLEDestroy)(ReadlineEngine* thiz);
 
 struct _ReadlineEngine {
     RLEInit init;
     RLERun run;
     RLEAddCmd add_cmd;
+    RLEQuit quit;
     RLEDestroy destroy;
 
     char priv[1];
@@ -70,6 +72,13 @@ static inline Ret readline_engine_add_cmd(ReadlineEngine* thiz, CmdInterface* cm
     return_val_if_fail(thiz != NULL && cmd != NULL && thiz->add_cmd != NULL, RET_INVALIAD_PARAM);
 
     return thiz->add_cmd(thiz, cmd);
+}
+
+static inline Ret readline_engine_quit(ReadlineEngine* thiz)
+{
+    return_val_if_fail(thiz != NULL && thiz->quit != NULL, RET_INVALIAD_PARAM);
+
+    return thiz->quit(thiz);
 }
 
 static inline void readline_engine_destroy(ReadlineEngine* thiz)

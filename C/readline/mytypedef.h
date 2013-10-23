@@ -1,7 +1,7 @@
 /*
- * File:    help_cmd.h
+ * File:    typedef.h
  * Author:  zxsu <suzp1984@gmail.com>
- * Brief:   help command interface
+ * Brief:   typedef header
  *
  * Copyright (c) zxsu
  *
@@ -25,15 +25,22 @@
 /*
  * History:
  * ================================================================
- * 2013-10-19 11:25 zxsu <suzp1984@gmail.com> created.
+ * 2013-10-19 11:13 zxsu <suzp1984@gmail.com> created.
  */
 
-#ifndef _HELP_CMD_H
-#define _HELP_CMD_H
+#ifndef _MY_TYPEDEF_H
+#define _MY_TYPEDEF_H
 
-#include "command_interface.h"
-#include "readline_engine.h"
+typedef enum {
+    RET_OK,
+    RET_OOM,
+    RET_FAIL,
+    RET_INVALIAD_PARAM
+} Ret;
 
-CmdInterface* help_cmd_create(ReadlineEngine* engine);
+#define DECLES_PRIV(priv, thiz) PrivInfo* priv = (PrivInfo*)thiz->PrivInfo
 
-#endif /* _HELP_CMD_H */
+#define return_if_fail(x) if (!(x)) {return;}
+#define return_val_if_fail(x, val) if (!(x)) {return (val);}
+
+#endif /* _MY_TYPEDEF_H */

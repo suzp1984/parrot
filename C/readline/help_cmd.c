@@ -36,6 +36,10 @@
 #define HELP_NAME "help"
 #define HELP_DESCRIPTION "Show help usage func"
 
+typedef struct _PrivInfo {
+    ReadlineEngine* engine;
+} PrivInfo;
+
 static void help_cmd_run(CmdInterface* thiz, const char* arg)
 {
     rl_printf("This is the Help cmd from %s\n", __func__);
@@ -50,16 +54,18 @@ static void help_cmd_destroy(CmdInterface* thiz)
     return;
 }
 
-CmdInterface* help_cmd_create()
+CmdInterface* help_cmd_create(ReadlineEngine* engine)
 {
     CmdInterface* thiz = (CmdInterface*)malloc(sizeof(CmdInterface));
 
     if (thiz != NULL) {
+        DECLES_PRIV(priv, thiz);
         thiz->cmd = HELP_NAME;
         thiz->desc = HELP_DESCRIPTION;
         thiz->arg = NULL;
         thiz->func = help_cmd_run;
         thiz->destroy = help_cmd_destroy;
+        priv->engine = engine;
     }
 
     return thiz;

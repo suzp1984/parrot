@@ -1,7 +1,7 @@
 /*
- * File:    help_cmd.h
+ * File:    quit_cmd.h
  * Author:  zxsu <suzp1984@gmail.com>
- * Brief:   help command interface
+ * Brief:   brief
  *
  * Copyright (c) zxsu
  *
@@ -25,15 +25,15 @@
 /*
  * History:
  * ================================================================
- * 2013-10-19 11:25 zxsu <suzp1984@gmail.com> created.
+ * 2013-10-23 23:11 zxsu <suzp1984@gmail.com> created.
  */
 
-#ifndef _HELP_CMD_H
-#define _HELP_CMD_H
+#ifndef _QUIT_CMD_H
+#define _QUIT_CMD_H
 
 #include "command_interface.h"
 #include "readline_engine.h"
 
-CmdInterface* help_cmd_create(ReadlineEngine* engine);
+CmdInterface* quit_cmd_create(ReadlineEngine* engine);
 
-#endif /* _HELP_CMD_H */
+#endif /* _QUIT_CMD_H */

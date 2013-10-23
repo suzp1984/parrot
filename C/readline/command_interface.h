@@ -1,7 +1,7 @@
 /*
  * File:    command_interface.h
  * Author:  zxsu <suzp1984@gmail.com>
- * Brief:   brief
+ * Brief:   command interface
  *
  * Copyright (c) zxsu
  *

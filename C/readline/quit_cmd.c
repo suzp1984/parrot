@@ -1,7 +1,7 @@
 /*
- * File:    help_cmd.h
+ * File:    quit_cmd.c
  * Author:  zxsu <suzp1984@gmail.com>
- * Brief:   help command interface
+ * Brief:   brief
  *
  * Copyright (c) zxsu
  *
@@ -25,15 +25,26 @@
 /*
  * History:
  * ================================================================
- * 2013-10-19 11:25 zxsu <suzp1984@gmail.com> created.
+ * 2013-10-23 23:11 zxsu <suzp1984@gmail.com> created.
  */
 
-#ifndef _HELP_CMD_H
-#define _HELP_CMD_H
+#include "quit_cmd.h"
 
-#include "command_interface.h"
-#include "readline_engine.h"
+#include <stdlib.h>
 
-CmdInterface* help_cmd_create(ReadlineEngine* engine);
+#define QUIT_CMD_NAME "quit"
+#define QUIT_CMD_DESCRIPTION "quit readline loop"
 
-#endif /* _HELP_CMD_H */
+typedef struct _PrivInfo {
+    ReadlineEngine* engine;
+} PrivInfo;
+
+CmdInterface* quit_cmd_create(ReadlineEngine* engine)
+{
+    CmdInterface* thiz = (CmdInterface*)malloc(sizeof(CmdInterface));
+
+    if (thiz != NULL) {
+    }
+
+    return thiz;
+}
