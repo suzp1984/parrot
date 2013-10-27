@@ -36,7 +36,15 @@
 #include "display.h"
 #include "cmd_manager.h"
 
-static GMainLoop *main_loop;
+static guint setup_standard_input(void);
+static char** client_completion(const char* text, int start, int end);
+static void rl_handler(char* input);
+static gboolean input_handler(GIOChannel *channel, GIOCondition condition,
+                              gpointer user_data);
+static guint setup_standard_input(void);
+
+static ReadlineEngine* default_engine = NULL;
+static GMainLoop *main_loop = NULL;
 
 typedef struct _PrivInfo {
     GMainLoop *main_loop;
@@ -44,16 +52,138 @@ typedef struct _PrivInfo {
     CmdManager* cmd_manager;
 } PrivInfo;
 
-static void internel_help_cmd(const char* arg)
+static char** client_completion(const char* text, int start, int end)
 {
-    rl_printf("This is the Help cmd from %s\n", __func__);
+    char** matches = NULL;
+    
+    if (start > 0) {
+		int i;
+        
+        /*
+		for (i = 0; cmd_table[i].cmd; i++) {
+			if (strncmp(cmd_table[i].cmd,
+                        rl_line_buffer, start - 1))
+				continue;
+            
+        }
+        */
+    }
 }
 
-static void internel_quit_cmd(const char* arg)
+static void rl_handler(char* input)
 {
-    rl_printf("Quit the main_loop %s", __func__);
-	g_main_loop_quit(main_loop);
+	char *cmd, *arg;
+	int i;
+    int count;
+    CmdInterface* item_cmd;
+    char* item_name;
+    char* item_desc;
+
+    if (!default_engine) {
+        return;
+    }
+
+    DECLES_PRIV(priv, default_engine);
+    count = cmd_manager_get_count(priv->cmd_manager);
+
+	if (!input) {
+		rl_insert_text("quit");
+		rl_redisplay();
+		rl_crlf();
+		g_main_loop_quit(main_loop);
+		return;
+	}
+    
+	if (!strlen(input))
+		goto done;
+    
+	add_history(input);
+    
+	cmd = strtok_r(input, " ", &arg);
+	if (!cmd)
+		goto done;
+    
+	if (arg) {
+		int len = strlen(arg);
+		if (len > 0 && arg[len - 1] == ' ')
+			arg[len - 1] = '\0';
+	}
+    
+    for (i = 0; i < count; i++)
+    {
+        cmd_manager_get(priv->cmd_manager, i, &item_cmd);
+        cmd_get_name(item_cmd, &item_name);
+        if (strcmp(cmd, item_name))
+            continue;
+
+        cmd_run();
+        goto done;
+    }
+/*
+	for (i = 0; cmd_table[i].cmd; i++) {
+		if (strcmp(cmd, cmd_table[i].cmd))
+			continue;
+        
+		if (cmd_table[i].func) {
+			cmd_table[i].func(arg);
+			goto done;
+		}
+	}
+*/
+  
+	printf("Available commands:\n");
+
+    for (i = 0; i < count; i++) {
+        item_desc = NULL;
+        cmd_manager_get(priv->cmd_manager, i, &item_cmd);
+        cmd_get_desc(item_cmd, &item_desc);
+        if (item_desc) {
+            printf("  desc: %s\n", item_desc);
+        }
+    }
+    
+/*
+	for (i = 0; cmd_table[i].cmd; i++) {
+		if (cmd_table[i].desc)
+			printf("  %s %-*s %s\n", cmd_table[i].cmd,
+                   (int)(25 - strlen(cmd_table[i].cmd)),
+                   cmd_table[i].arg ? : "",
+                   cmd_table[i].desc ? : "");
+	}
+*/  
+    
+done:
+	free(input);
 }
+
+static gboolean input_handler(GIOChannel *channel, GIOCondition condition,
+                              gpointer user_data)
+{
+	if (condition & (G_IO_HUP | G_IO_ERR | G_IO_NVAL)) {
+		g_main_loop_quit(main_loop);
+		return FALSE;
+	}
+    
+	rl_callback_read_char();
+	return TRUE;
+}
+
+static guint setup_standard_input(void)
+{
+	GIOChannel *channel;
+	guint source;
+    
+	channel = g_io_channel_unix_new(fileno(stdin));
+    
+	source = g_io_add_watch(channel,
+                            G_IO_IN | G_IO_HUP | G_IO_ERR | G_IO_NVAL,
+                            input_handler, NULL);
+    
+	g_io_channel_unref(channel);
+    
+	return source;
+}
+
 
 static void glib_readline_init(ReadlineEngine* thiz)
 {
@@ -61,7 +191,17 @@ static void glib_readline_init(ReadlineEngine* thiz)
     return_if_fail(priv->main_loop != NULL);
 
     rl_attempted_completion_function = client_completion;
+    rl_erase_empty_line = 1;
+	rl_callback_handler_install(NULL, rl_handler);
+    
+	rl_set_prompt("#");
+	rl_redisplay();
+    
+    priv->input = setup_standard_input();
+
+    
 }
+
 
 static void glib_readline_run(ReadlineEngine* thiz)
 {
@@ -98,6 +238,10 @@ static void glib_readline_destroy(ReadlineEngine* thiz)
 
 ReadlineEngine* glib_readline_engine_create()
 {
+    if (default_engine != NULL) {
+        return default_engine;
+    }
+
     ReadlineEngine* thiz = (ReadlineEngine*)malloc(sizeof(ReadlineEngine) + sizeof(PrivInfo));
 
     if (thiz != NULL) {
@@ -112,7 +256,8 @@ ReadlineEngine* glib_readline_engine_create()
         priv->main_loop = g_main_loop_new(NULL, FALSE);
         priv->cmd_manager = cmd_manager_create();
         main_loop = priv->main_loop;
+        default_engine = thiz;
     }
-
+    
     return thiz;
 }

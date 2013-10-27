@@ -37,12 +37,19 @@ struct _CmdManager {
     DList* cmd_pool;
 };
 
+static void cmd_destroy_hook(void* ctx, void* data)
+{
+    CmdInterface* cmd = (CmdInterface*)data;
+    
+    cmd_destroy(cmd);
+}
+
 CmdManager* cmd_manager_create()
 {
     CmdManager* thiz = (CmdManager*)malloc(sizeof(CmdManager));
     
     if (thiz != NULL) {
-        thiz->cmd_pool = dlist_create(NULL, NULL, NULL);
+        thiz->cmd_pool = dlist_create(cmd_destroy_hook, NULL, NULL);
     }
 
     return thiz;

@@ -4,3 +4,5 @@ import glob
 
 Program(['readline-client.c', 'display.c'], LIBS=['glib-2.0', 'readline'], CCFLAGS='-Wall -g -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include')
 
+Program('readline_engine', ['readline-main.c', 'display.c', 'cmd_manager.c', 'dlist.c', 'help_cmd.c', 'quit_cmd.c', 'readline_engine_glib.c'], LIBS=['glib-2.0', 'readline'], CCFLAGS='-Wall -g -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include')
+
