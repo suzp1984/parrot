@@ -31,7 +31,7 @@
 #include "cmd_manager.h"
 
 #include <stdlib.h>
-#include <dlist.h>
+#include "dlist.h"
 
 struct _CmdManager {
     DList* cmd_pool;
@@ -57,7 +57,7 @@ CmdManager* cmd_manager_create()
 
 Ret cmd_manager_add_cmd(CmdManager* thiz, CmdInterface* cmd)
 {
-    return_val_if_fail(thiz != NULL && cmd != NULL, RET_INVALIAD_PARAM);
+    return_val_if_fail(thiz != NULL && cmd != NULL, RET_INVALID_PARAMS);
 
     dlist_append(thiz->cmd_pool, cmd);
 
@@ -66,16 +66,16 @@ Ret cmd_manager_add_cmd(CmdManager* thiz, CmdInterface* cmd)
 
 size_t cmd_manager_get_count(CmdManager* thiz)
 {
-    return_val_if_fail(thiz != NULL);
+    return_val_if_fail(thiz != NULL, 0);
 
     return dlist_length(thiz->cmd_pool);
 }
 
 Ret cmd_manager_get(CmdManager* thiz, size_t index, CmdInterface** cmd)
 {
-    return_val_if_fail(thiz != NULL && index >= 0 && cmd != NULL, RET_INVALIAD_PARAM);
+    return_val_if_fail(thiz != NULL && index >= 0 && cmd != NULL, RET_INVALID_PARAMS);
     
-    dlist_get_by_index(thiz->cmd_pool, index, cmd);
+    dlist_get_by_index(thiz->cmd_pool, index, (void**)cmd);
 
     return RET_OK;
 }

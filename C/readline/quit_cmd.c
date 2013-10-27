@@ -29,6 +29,7 @@
  */
 
 #include "quit_cmd.h"
+#include "display.h"
 
 #include <stdlib.h>
 
@@ -39,11 +40,31 @@ typedef struct _PrivInfo {
     ReadlineEngine* engine;
 } PrivInfo;
 
+static void quit_cmd_run(CmdInterface* thiz, const char* arg)
+{
+    DECLES_PRIV(priv, thiz);
+    readline_engine_quit(priv->engine);
+}
+
+static void quit_cmd_destroy(CmdInterface* thiz)
+{
+    if (thiz != NULL) {
+        free(thiz);
+    }
+}
+
 CmdInterface* quit_cmd_create(ReadlineEngine* engine)
 {
-    CmdInterface* thiz = (CmdInterface*)malloc(sizeof(CmdInterface));
+    CmdInterface* thiz = (CmdInterface*)malloc(sizeof(CmdInterface) + sizeof(PrivInfo));
 
     if (thiz != NULL) {
+        DECLES_PRIV(priv, thiz);
+        thiz->func = quit_cmd_run;
+        thiz->destroy = quit_cmd_destroy;
+        thiz->cmd = QUIT_CMD_NAME;
+        thiz->desc = QUIT_CMD_DESCRIPTION;
+        thiz->arg = NULL;
+        priv->engine = engine;
     }
 
     return thiz;

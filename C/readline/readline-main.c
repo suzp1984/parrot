@@ -28,7 +28,7 @@
  * 2013-10-20 12:18 zxsu <suzp1984@gmail.com> created.
  */
 
-
+#include <stdio.h>
 #include <readline/readline.h>
 #include <readline/history.h>
 #include <glib.h>
@@ -41,6 +41,8 @@
 int main(int argc, char* argv[])
 {
     ReadlineEngine* rdengine = glib_readline_engine_create();
+    readline_engine_init(rdengine);
+
     CmdInterface* help_cmd = help_cmd_create(rdengine);
     CmdInterface* quit_cmd = quit_cmd_create(rdengine);
   

@@ -54,10 +54,10 @@ typedef struct _PrivInfo {
 
 static char** client_completion(const char* text, int start, int end)
 {
-    char** matches = NULL;
+    //char** matches = NULL;
     
     if (start > 0) {
-		int i;
+        //	int i;
         
         /*
 		for (i = 0; cmd_table[i].cmd; i++) {
@@ -68,6 +68,8 @@ static char** client_completion(const char* text, int start, int end)
         }
         */
     }
+    
+    return NULL;
 }
 
 static void rl_handler(char* input)
@@ -116,7 +118,7 @@ static void rl_handler(char* input)
         if (strcmp(cmd, item_name))
             continue;
 
-        cmd_run();
+        cmd_run(item_cmd);
         goto done;
     }
 /*
@@ -194,7 +196,7 @@ static void glib_readline_init(ReadlineEngine* thiz)
     rl_erase_empty_line = 1;
 	rl_callback_handler_install(NULL, rl_handler);
     
-	rl_set_prompt("#");
+	rl_set_prompt("# ");
 	rl_redisplay();
     
     priv->input = setup_standard_input();
@@ -223,6 +225,13 @@ static Ret glib_readline_quit(ReadlineEngine* thiz)
 {
     DECLES_PRIV(priv, thiz);
     g_main_loop_quit(priv->main_loop);
+
+    g_source_remove(priv->input);
+
+	rl_message("");
+	rl_callback_handler_remove();
+
+//	g_main_loop_unref(priv->main_loop);
 
     return RET_OK;
 }

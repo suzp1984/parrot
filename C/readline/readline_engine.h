@@ -28,8 +28,8 @@
  * 2013-10-20 12:22 zxsu <suzp1984@gmail.com> created.
  */
 
-#ifndef _READLINE-ENGINE_H
-#define _READLINE-ENGINE_H
+#ifndef _READLINE_ENGINE_H
+#define _READLINE_ENGINE_H
 
 #include "typedef.h"
 #include "command_interface.h"
@@ -69,14 +69,14 @@ static inline void readline_engine_run(ReadlineEngine* thiz)
 
 static inline Ret readline_engine_add_cmd(ReadlineEngine* thiz, CmdInterface* cmd)
 {
-    return_val_if_fail(thiz != NULL && cmd != NULL && thiz->add_cmd != NULL, RET_INVALIAD_PARAM);
+    return_val_if_fail(thiz != NULL && cmd != NULL && thiz->add_cmd != NULL, RET_INVALID_PARAMS);
 
     return thiz->add_cmd(thiz, cmd);
 }
 
 static inline Ret readline_engine_quit(ReadlineEngine* thiz)
 {
-    return_val_if_fail(thiz != NULL && thiz->quit != NULL, RET_INVALIAD_PARAM);
+    return_val_if_fail(thiz != NULL && thiz->quit != NULL, RET_INVALID_PARAMS);
 
     return thiz->quit(thiz);
 }
