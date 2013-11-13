@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: an-example-of-egg-project
+Version: 0.0.1
+Summary: A example python project
+Home-page: UNKNOWN
+Author: zxsu
+Author-email: suzp1984@gmail.com
+License: BSD
+Description: Hello world project
+Keywords: egg project hello
+Platform: UNKNOWN

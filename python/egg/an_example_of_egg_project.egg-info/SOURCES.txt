@@ -1,0 +1,9 @@
+README
+setup.py
+an_example_of_egg_project.egg-info/PKG-INFO
+an_example_of_egg_project.egg-info/SOURCES.txt
+an_example_of_egg_project.egg-info/dependency_links.txt
+an_example_of_egg_project.egg-info/top_level.txt
+hello/__init__.py
+hello/hello.py
+tests/__init__.py
