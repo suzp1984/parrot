@@ -32,17 +32,17 @@ class Setting(object):
         print "Setting init.." + str(num)
         pass
         
-        @classmethod
-        def get_instance(cls):
-            """ This class is a singlton so use this method to use it. """
-            if cls.instance:
-                return cls.instance
+    @classmethod
+    def get_instance(cls):
+        """ This class is a singlton so use this method to use it. """
+        if cls.instance:
+            return cls.instance
                 
-                cls.instance = Setting()
-                return cls.instance
+        cls.instance = Setting()
+        return cls.instance
                 
                 
-                if __name__ == "__main__":
-                    setting1 = Setting.get_instance()
-                    Setting2 = Setting.get_instance()
-                    Setting3 = Setting(2)
+if __name__ == "__main__":
+    setting1 = Setting.get_instance()
+    Setting2 = Setting.get_instance()
+    Setting3 = Setting(2)
