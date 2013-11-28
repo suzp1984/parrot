@@ -1,3 +1,5 @@
+##TODO: add short-key binding
+
 from __future__ import division
 import sys
 from math import *
@@ -18,3 +20,19 @@ class Form(QDialog):
         self.connect(self.lineedit, SIGNAL("returnPressed()"),
                      self.updateui)
         self.setWindowTitle("Calculate")
+
+    def updateui(self):
+        try:
+            text = unicode(self.lineedit.text())
+            self.browser.append("%s = <b>%s</b>" % (text, eval(text)))
+        except:
+            self.browser.append(
+                "<font color=red>%s is invalid!</font>" % text)
+
+        self.lineedit.clear()
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    form = Form()
+    form.show()
+    app.exec_()
