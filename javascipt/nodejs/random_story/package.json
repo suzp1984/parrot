@@ -1,0 +1,8 @@
+{
+    "name" : "random_story",
+    "version" : "0.0.1",
+    "dependencies" : {
+        "request" : "~2.27.0",
+        "htmlparser" : "~1.7.6"
+        }
+}

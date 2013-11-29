@@ -1,0 +1,2 @@
+http://goodstuff.im/rss.xml
+http://www.abc.net.au/bestof/bestofabc.xml
