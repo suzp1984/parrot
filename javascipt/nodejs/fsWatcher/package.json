@@ -1,0 +1,6 @@
+{
+    "name" : "FsWatcher",
+    "version" : "0.0.1",
+    "author" : "zxsu <suzp1984@gmail.com>",
+    "description" : "Wather a directory in an filesystem"
+}
