@@ -1,4 +1,5 @@
 var http = require('http');
+var formidable = require('formidable');
 
 function show(res) {
     var html = ''
@@ -25,6 +26,20 @@ function badRequest(res) {
     res.end('Bad Request');
 }
 
+function isFormData(req) {
+    var type = req.headers['Content-type'] || '';
+    return 0 == type.indexOf('multipart/form-data');
+}
+
+function upload(req, res) {
+    if (!isFormData(req)) {
+        res.statusCode = 400;
+        res.end('Bad request: expecting multipart/form-data');
+        return;
+    }
+    var form = new formidable.IncomingForm();
+    form.parse(req);
+}
 
 var server = http.createServer(function(req, res) {
     if ('/' == req.url) {
