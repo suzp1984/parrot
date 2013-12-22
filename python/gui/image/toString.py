@@ -7,7 +7,13 @@ from PyQt5.QtWidgets import *
 from PIL import Image
 import StringIO
 
-output = StringIO.StringIO()
+#output = StringIO.StringIO()
 
 img = Image.open("./myself-new.png")
-#print img.tostring()
+#output.write(img.tostring())
+#print output.getvalue()
+#output.close()
+print img.tostring().encode('string-escape')
+#text_file = open("result.txt", 'w')
+#text_file.write("%s" % img.tostring())
+#text_file.close()
