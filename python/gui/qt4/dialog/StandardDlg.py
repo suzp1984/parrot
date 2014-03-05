@@ -20,7 +20,7 @@ class NumberFormatDlg(QDialog):
         self.redNegativesCheckBox = QCheckBox("&Red negative numbers")
         self.redNegativesCheckBox.setChecked(format["rednegatives"])
 
-        buttonBox = QDialogButtonBox(QDialogButtonBox.OK|
+        buttonBox = QDialogButtonBox(QDialogButtonBox.Ok|
                                      QDialogButtonBox.Cancel)
         
         self.format = format.copy()
@@ -36,7 +36,7 @@ class NumberFormatDlg(QDialog):
         grid.addWidget(buttonBox, 4, 0, 1, 2)
         self.setLayout(grid)
 
-        self.connect(buttonBox, SIGNAL("accepted()"),
+        self.connect(buttonBox.button(QDialogButtonBox.Ok), SIGNAL("clicked()"),
                      self, SLOT("accept()"))
         self.connect(buttonBox, SIGNAL("rejected()"),
                      self, SLOT("reject()"))
@@ -78,13 +78,27 @@ class NumberFormatDlg(QDialog):
             self.decimalMarkerEdit.selectAll()
             self.decimalMarkerEdit.setFocus()
             return
+
+        self.format["thousandsseparator"] = thousands
+        self.format["decimalmarker"] = decimal
+        self.format["decimalplaces"] = self.decimalPlacesSpinBox.value()
+        self.format["rednegatives"] = self.redNegativesCheckBox.isChecked()
+        QDialog.accept(self)
             
                                 
-            
-
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    numFormDlg = NumberFormatDlg()
+    format = { "thousandsseparator" : ",",
+               "decimalmarker" : ".",
+               "decimalplaces" : 1,
+               "rednegatives" : True
+           }
+    numFormDlg = NumberFormatDlg(format)
     numFormDlg.show()
-    app.exec_()
+    if app.exec_():
+        newformat = numFormDlg.numberFormat()
+        print newformat
+    else:
+        print "exit fail"
+    
 
