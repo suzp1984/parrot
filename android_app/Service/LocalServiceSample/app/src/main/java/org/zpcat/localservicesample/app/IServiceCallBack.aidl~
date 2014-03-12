@@ -1,0 +1,8 @@
+package org.zpcat.localservicesample.app;
+
+public interface IRemoteServiceCallback {
+    /**
+     * Called when the service has a new value for you.
+     */
+    void valueChanged(int value);
+}
