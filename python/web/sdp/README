@@ -1,0 +1,14 @@
+the purpose of the this project:
+I running a lot of service in my desktop environment at the company LAN, but the 
+ip address was allway alterate, so my initial intent to develop this app is to let
+my follow colleagues to detect my desktop's ip address much quickly.
+
+this solution is to running a http server in my desktop, and the client must post reqest 
+at least with a key/value pair: req=get_ip. Then a client scan all the LAN ip address with
+that request, my computer will response with {'status' : 0, 'ret':ip_address}.
+
+Next target: add some certification or encryption methods to eject the fake server.
+
+sdp_server.py: a tornado server can handle post request and return the server's ip address.
+get_server_ip.py: a single thread client whose's function is to request the ip address.
+get_server_ip_thread.py: a multi thread client can request the remote server's ip address much faster.
