@@ -6,9 +6,10 @@ import sys
 import json
 
 def get_ip():
-    return socket.gethostbyname(socket.gethostname())
-    
-        
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.connect(('www.baidu.com', 80))
+    return s.getsockname()[0]
+
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
         self.write("Hello, world!")
