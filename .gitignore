@@ -1,3 +1,6 @@
 *.class
 *~
 *.dylib
+.DS_Store
+.ropeproject/
+*.pyc
