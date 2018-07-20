@@ -41,15 +41,15 @@ def send_email():
 
         """ % (ip))
 
-        msg['To'] = email.utils.formataddr(('suzhenxing', 'suzhenxing@iboxpay.com'))
-        msg['From'] = email.utils.formataddr(('suzh1984', 'suzh1984@163.com'))
+        msg['To'] = email.utils.formataddr(('username', 'target@domain.com'))
+        msg['From'] = email.utils.formataddr(('username', 'source@domain.com'))
         msg['Subject'] = "raspberry pi's address"
 
         #print msg
-        conn = smtplib.SMTP("smtp.163.com")
+        conn = smtplib.SMTP("smtp.server.com")
         #conn.set_debuglevel(True)
-        conn.login("suzh1984", "su@xiasha2014")
-        conn.sendmail('suzh1984@163.com', ['suzhenxing@iboxpay.com'], msg.as_string())
+        conn.login("userName", "passwd")
+        conn.sendmail('source@domain.name', ['target@domain.com'], msg.as_string())
         conn.quit()
     except StopIteration:
         pass
